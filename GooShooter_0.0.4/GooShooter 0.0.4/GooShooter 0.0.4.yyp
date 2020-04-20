@@ -74,7 +74,7 @@
             "Key": "06f7f9a3-2a22-49e0-a3ce-4a2931e3bf4f",
             "Value": {
                 "id": "17c39c27-30e1-4265-bf6e-4429209b48c9",
-                "resourcePath": "shaders\\shader0\\shader0.yy",
+                "resourcePath": "shaders\\sh_turret\\sh_turret.yy",
                 "resourceType": "GMShader"
             }
         },
