@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "934d52bc-8346-4d4a-944e-8ef9daf5878f",
+            "Value": {
+                "id": "308183cb-b414-4391-a4f9-27052375e455",
+                "resourcePath": "sprites\\slight_turret\\slight_turret.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93d816ba-2da3-44b6-90f4-899ec18e8442",
             "Value": {
                 "id": "2d861592-e34e-4fa4-a0ed-ec20f3a8fdcf",
