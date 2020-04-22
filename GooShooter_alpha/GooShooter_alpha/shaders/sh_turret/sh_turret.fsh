@@ -19,6 +19,14 @@ void main()
 		base_col.r = base_col.r + 0.5;
 		//base_col.a = 0.5;
 		float xx = v_vTexcoord.x;
+		xx *= 2.0;
+		xx *= xx;
+		xx *= xx;
+		xx *= xx;
+		xx /= 2.0;
+		xx += 0.1;
+		
+		
 		base_col.a += xx;
 	}
 	
