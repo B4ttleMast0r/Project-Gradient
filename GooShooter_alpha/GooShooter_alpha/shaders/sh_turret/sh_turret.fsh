@@ -24,9 +24,7 @@ void main()
 		xx *= xx;
 		xx *= xx;
 		xx /= 2.0;
-		xx += 0.1;
-		
-		
+		xx += 0.2;
 		base_col.a += xx;
 	}
 	
