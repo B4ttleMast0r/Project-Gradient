@@ -3,6 +3,8 @@
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
+uniform float pixelW;
+//uniform float texelW
 
 void main()
 {
@@ -13,9 +15,14 @@ void main()
 	}else{
 		base_col.g = 0.0;
 		base_col.b = 0.0;
+		base_col.a = 0.0;
 		base_col.r = base_col.r + 0.5;
-		base_col.a = 0.5;
+		//base_col.a = 0.5;
+		float xx = v_vTexcoord.x;
+		base_col.a += xx;
 	}
+	
+	
 	
     gl_FragColor = base_col;
 }
