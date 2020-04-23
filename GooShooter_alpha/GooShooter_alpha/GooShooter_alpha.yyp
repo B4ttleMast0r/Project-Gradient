@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "2958728c-e5ef-4700-8601-259363e3fd81",
+            "Value": {
+                "id": "9281958d-fb61-43ff-9d06-879c896b211d",
+                "resourcePath": "sounds\\sn_katanazero_nocturnedistorted\\sn_katanazero_nocturnedistorted.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2962d8ec-f82f-4a86-ae4e-36dbae7a12b0",
             "Value": {
                 "id": "5a5c412b-563f-48b3-8c82-a9c2c93afdba",
@@ -164,6 +172,14 @@
                 "id": "42d00791-512c-42ee-a5af-6c103a1072fe",
                 "resourcePath": "sprites\\chesstile\\chesstile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "37c13153-4ee9-495c-99bd-25f0c8aedba3",
+            "Value": {
+                "id": "37cf2d05-5260-4294-a4a8-957a9a877fc1",
+                "resourcePath": "sounds\\sn_katanazero_thesandman2\\sn_katanazero_thesandman2.yy",
+                "resourceType": "GMSound"
             }
         },
         {
