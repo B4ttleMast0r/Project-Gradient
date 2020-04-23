@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "8214ccf1-58d8-4280-b707-0a59c4cf9bb4",
+            "Value": {
+                "id": "43a69ce2-c6f6-4834-832d-30eb4cba7bd4",
+                "resourcePath": "objects\\oVideoTest\\oVideoTest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "88a77ee8-a429-4bf0-b62f-43e1b247560c",
             "Value": {
                 "id": "df6e0b1b-d439-4a65-b0d7-62598c2ea7c3",
