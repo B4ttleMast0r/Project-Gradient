@@ -6,40 +6,21 @@ jump = keyboard_check_pressed(ord("W"));
 
 var move = right - left;
 
-//horizontal movement
-hsp += move * acc;
-
-
 //vertical movement
 vsp += grv;
 
-//if the speed is too big, it gets divided
 if onground {
-	acc = 0.5;
-	dcc = 0.3
-	stp = 3;
-	divnumb = 0.9
+	plyrinputaccel = 0.5;
+	afkdecel = 0.3;
+	hspdcap = 3;
+	spdcapdecelfactor = 0.96
 }else{
-	acc = 0.5;
-	dcc = 0.5
-	stp = 3;
-	divnumb = 0.9
+	plyrinputaccel = 0.5;
+	afkdecel = 0.5;
+	hspdcap = 3;
+	spdcapdecelfactor = 0.96
 }
-if abs(hsp) > abs(stp) hsp *= divnumb
-if move == 0 {
-	if hsp > 0 {
-		if hsp - dcc < 0 {
-			while  (hsp > 0) hsp = hsp - 0.1;
-			hsp = 0	
-		}else hsp -= dcc 
-	}
-	if hsp < 0 {
-		if hsp + dcc > 0 {
-			while  (hsp < 0) hsp = hsp + 0.1;
-			hsp = 0
-		}else hsp += dcc 
-	}
-}
+
 //jumpbuffer
 onground = place_meeting(x, y + 1, oWall);
 if onground jumpbuffer = 6;
