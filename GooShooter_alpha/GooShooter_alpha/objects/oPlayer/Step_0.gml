@@ -58,10 +58,10 @@ if jumprequesttimer > 0 && onground == true{
 vertspd += gravity_custom;
 
 //decelerate if above speed cap
-if horizspd > hspdcap {
+if abs(horizspd) > hspdcap {
 	horizspd = horizspd * hspdcapdecelfactor;
 }
-if vertspd > vspdcap {
+if abs(vertspd) > vspdcap {
 	vertspd = vertspd * vspdcapdecelfactor;
 }
 
