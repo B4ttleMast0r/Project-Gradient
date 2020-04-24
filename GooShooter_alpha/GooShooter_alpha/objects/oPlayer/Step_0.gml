@@ -1,13 +1,14 @@
 //get inputs
-left = keyboard_check(ord("A"));
-right = keyboard_check(ord("D"));
-jump = keyboard_check_pressed(ord("W"));
+input_left = keyboard_check(ord("A"));
+input_right = keyboard_check(ord("D"));
+input_jump = keyboard_check_pressed(ord("W"));
+input_bomb = mouse_check_button_pressed(mb_right);
 
 
 var move = right - left;
 
 //vertical movement
-vsp += grv;
+vertspd += gravity_custom;
 
 if onground {
 	plyrinputaccel = 0.5;
@@ -25,37 +26,37 @@ if onground {
 onground = place_meeting(x, y + 1, oWall);
 if onground jumpbuffer = 6;
 jumpbuffer --;
-if jump jumprequest = 6;
+if input_jump jumprequest = 6;
 jumprequest --;
 //ground jump
 if jumpbuffer >= 0 {
 	if jumprequest > 0 {
 		jumpbuffer = 0;
-		vsp = -7.2;
+		vertspd = -7.2;
 	}
 }
 //horizontal collision
-if place_meeting(x + hsp, y, oWall) {
-	var onepixel = sign(hsp);
+if place_meeting(x + horizspd, y, oWall) {
+	var onepixel = sign(horizspd);
 	while(!place_meeting(x + onepixel, y, oWall)) x += onepixel;
-	hsp = 0;
+	horizspd = 0;
 }
 
 //vertical collision
-if place_meeting(x, y + vsp, oWall) {
-	var onepixel = sign(vsp);
+if place_meeting(x, y + vertspd, oWall) {
+	var onepixel = sign(vertspd);
 	while(!place_meeting(x, y + onepixel, oWall)) y += onepixel;
-	vsp = 0;
+	vertspd = 0;
 }
 
 //corner collisions
-if place_meeting(x + hsp, y + vsp, oWall) {
-	vsp = 0;
-	hsp = 0;
+if place_meeting(x + horizspd, y + vertspd, oWall) {
+	vertspd = 0;
+	horizspd = 0;
 }
 
-x += hsp;
-y += vsp;
+x += horizspd;
+y += vertspd;
 
 //animation
 if onground {
@@ -103,14 +104,14 @@ if x > room_width + 10 x = -9;
 if x < -10 x = room_width + 9;
 //bomb
 bombcooldown --;
-bomb = mouse_check_button_pressed(mb_right)
-if bomb && bombcooldown <= 0 {
+
+if input_bomb && bombcooldown <= 0 {
 	bombcooldown = 45;
 	with(instance_create_layer(x, y, "instances", oWaterbomb)){
 		image_speed = 0
 		direction = point_direction(x, y, mouse_x, mouse_y)
-		hsp = lengthdir_x(12, direction);
-		vsp = lengthdir_y(12, direction);
+		horizspd = lengthdir_x(12, direction);
+		vertspd = lengthdir_y(12, direction);
 	}
 	oHandtwo.bombthrown = true;
 }

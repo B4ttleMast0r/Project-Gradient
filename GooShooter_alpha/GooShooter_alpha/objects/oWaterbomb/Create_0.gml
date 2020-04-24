@@ -1,6 +1,6 @@
 /// @description oWaterfalls
-hsp = 0
-vsp = 0
+horizspd = 0
+vertspd = 0
 
 wallhitside = 0
 hit = 0
