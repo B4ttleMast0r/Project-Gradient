@@ -1,8 +1,8 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
-if oPlayer.left directionoffset =  -2
-if oPlayer.right directionoffset = 2
+if oPlayer.input_left directionoffset =  -2
+if oPlayer.input_right directionoffset = 2
 
 image_xscale = oPlayer.image_xscale;
 

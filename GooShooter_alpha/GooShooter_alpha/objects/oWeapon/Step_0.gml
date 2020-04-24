@@ -29,8 +29,8 @@ if oPlayer.sprite_index = sPlayerIdle {
 */
 
 
-if oPlayer.left directionoffset =  0
-if oPlayer.right directionoffset = 0
+if oPlayer.input_left directionoffset =  0
+if oPlayer.input_right directionoffset = 0
 
 
 
@@ -45,8 +45,8 @@ if x-mouse_x > 0 {
 //decides, wether or not to aim towards the mouse
 if oPlayer.sprite_index = sPlayerRunning && recoil < 1{
 	followmouse = false;
-	image_yscale = sign(oPlayer.hsp);
-	image_angle = sign(oPlayer.hsp) * 90 + 270;
+	image_yscale = sign(oPlayer.horizspd);
+	image_angle = sign(oPlayer.horizspd) * 90 + 270;
 	sprite_index = sWeaponRunning;
 } else {
 	followmouse = true;

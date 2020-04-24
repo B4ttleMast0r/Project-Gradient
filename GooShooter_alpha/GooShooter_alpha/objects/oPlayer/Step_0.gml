@@ -5,7 +5,7 @@ input_jump = keyboard_check_pressed(ord("W"));
 input_bomb = mouse_check_button_pressed(mb_right);
 
 
-var move = right - left;
+var move = input_right - input_left;
 
 //vertical movement
 vertspd += gravity_custom;
@@ -16,7 +16,7 @@ if onground {
 	hspdcap = 3;
 	spdcapdecelfactor = 0.96
 }else{
-	plyrinputaccel = 0.5;
+	plyrinputaccel = 0.32;
 	afkdecel = 0.5;
 	hspdcap = 3;
 	spdcapdecelfactor = 0.96
@@ -65,17 +65,17 @@ if onground {
 		image_speed = 1;
 	}
 	else {
-		if abs(hsp) > 1.5 {
+		if abs(horizspd) > 1.5 {
 			sprite_index = sPlayerRunning;
-			image_speed = abs(hsp);
+			image_speed = abs(horizspd);
 		}
 	}
 } else {
 	sprite_index = sPlayerJumping;
-	if vsp <= -5 image_index = 0;
-	if vsp <= 0 && vsp > -3 image_index = 1;
-	if vsp > 0 && vsp <= 3  image_index = 2;
-	if vsp > 5 image_index = 3;
+	if vertspd <= -5 image_index = 0;
+	if vertspd <= 0 && vertspd > -3 image_index = 1;
+	if vertspd > 0 && vertspd <= 3  image_index = 2;
+	if vertspd > 5 image_index = 3;
 }
 if move != 0 image_xscale = move;
 //sound
