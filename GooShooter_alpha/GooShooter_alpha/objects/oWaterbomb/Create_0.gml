@@ -1,5 +1,4 @@
-/// @description Hier Beschreibung einfügen
-// Sie können Ihren Code in diesem Editor schreiben
+/// @description oWaterfalls
 hsp = 0
 vsp = 0
 
