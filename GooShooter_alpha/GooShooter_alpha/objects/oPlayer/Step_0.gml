@@ -11,14 +11,14 @@ var input_move = input_right - input_left;
 onground = place_meeting(x, y + 1, oWall);
 if onground {
 	plyrinputaccel = 0.5;
-	afkdecel = 0.4;
+	afkdecel = 0.3;
 	hspdcap = 3;
 	vspdcap = 10;
 	hspdcapdecelfactor = 0.96;
 	vspdcapdecelfactor = 0.90;
-}else{
+}else{ //airborne
 	plyrinputaccel = 0.32;
-	afkdecel = 0.2;
+	afkdecel = 0.05;
 	hspdcap = 3;
 	vspdcap = 10;
 	hspdcapdecelfactor = 0.96;
@@ -27,6 +27,20 @@ if onground {
 
 //accelerate based on player input
 horizspd += plyrinputaccel * input_move;
+
+//decelerate if no button is pressed
+if horizspd > 0 {
+	horizspd -= afkdecel;
+	if horizspd < 0 {
+		horizspd = 0;
+	}
+}
+if horizspd < 0 {
+	horizspd += afkdecel;
+	if horizspd > 0 {
+		horizspd = 0;
+	}
+}
 
 //jumpbuffer
 if input_jump {
@@ -40,6 +54,16 @@ if jumprequesttimer > 0 && onground == true{
 		vertspd = -7.2;
 }
 
+//gravity
+vertspd += gravity_custom;
+
+//decelerate if above speed cap
+if horizspd > hspdcap {
+	horizspd = horizspd * hspdcapdecelfactor;
+}
+if vertspd > vspdcap {
+	vertspd = vertspd * vspdcapdecelfactor;
+}
 
 //horizontal collision
 if place_meeting(x + horizspd, y, oWall) {
@@ -73,9 +97,6 @@ if input_bomb && bombcooldown <= 0 {
 	}
 	oHandtwo.bombthrown = true;
 }
-
-//gravity
-vertspd += gravity_custom;
 
 //apply speed
 x += horizspd;

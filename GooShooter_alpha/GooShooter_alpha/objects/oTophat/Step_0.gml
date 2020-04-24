@@ -10,7 +10,7 @@ if oPlayer.sprite_index = sPlayerIdle {
 image_angle = 0 + oPlayer.horizspd * 6;
 image_xscale = oPlayer.image_xscale;
 
-if oPlayer.vsp > 0 {
+if oPlayer.vertspd > 0 {
 	fallingoffset = oPlayer.vertspd;
 } else fallingoffset *= 0.5;
 

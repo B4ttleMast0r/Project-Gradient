@@ -1,6 +1,6 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-playery = 0;
+
 cameraheight = 360;
 section = 0;
 ygoto = 0;
