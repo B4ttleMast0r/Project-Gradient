@@ -4,37 +4,43 @@ input_right = keyboard_check(ord("D"));
 input_jump = keyboard_check_pressed(ord("W"));
 input_bomb = mouse_check_button_pressed(mb_right);
 
+var input_move = input_right - input_left;
 
-var move = input_right - input_left;
 
-//vertical movement
-vertspd += gravity_custom;
-
+//onground or not, initiate movement physics stats
+onground = place_meeting(x, y + 1, oWall);
 if onground {
 	plyrinputaccel = 0.5;
-	afkdecel = 0.3;
+	afkdecel = 0.4;
 	hspdcap = 3;
-	spdcapdecelfactor = 0.96
+	vspdcap = 10;
+	hspdcapdecelfactor = 0.96;
+	vspdcapdecelfactor = 0.90;
 }else{
 	plyrinputaccel = 0.32;
-	afkdecel = 0.5;
+	afkdecel = 0.2;
 	hspdcap = 3;
-	spdcapdecelfactor = 0.96
+	vspdcap = 10;
+	hspdcapdecelfactor = 0.96;
+	vspdcapdecelfactor = 0.90;
 }
 
+//accelerate based on player input
+horizspd += plyrinputaccel * input_move;
+
 //jumpbuffer
-onground = place_meeting(x, y + 1, oWall);
-if onground jumpbuffer = 6;
-jumpbuffer --;
-if input_jump jumprequest = 6;
-jumprequest --;
-//ground jump
-if jumpbuffer >= 0 {
-	if jumprequest > 0 {
-		jumpbuffer = 0;
-		vertspd = -7.2;
-	}
+if input_jump {
+	jumprequesttimer = 6;
+}else {
+	jumprequesttimer --;
 }
+//ground jump
+if jumprequesttimer > 0 && onground == true{
+		jumprequesttimer = 0;
+		vertspd = -7.2;
+}
+
+
 //horizontal collision
 if place_meeting(x + horizspd, y, oWall) {
 	var onepixel = sign(horizspd);
@@ -55,12 +61,29 @@ if place_meeting(x + horizspd, y + vertspd, oWall) {
 	horizspd = 0;
 }
 
+//bomb
+bombcooldown --;
+if input_bomb && bombcooldown <= 0 {
+	bombcooldown = 45;
+	with(instance_create_layer(x, y, "instances", oWaterbomb)){
+		image_speed = 0
+		direction = point_direction(x, y, mouse_x, mouse_y)
+		horizspd = lengthdir_x(12, direction);
+		vertspd = lengthdir_y(12, direction);
+	}
+	oHandtwo.bombthrown = true;
+}
+
+//gravity
+vertspd += gravity_custom;
+
+//apply speed
 x += horizspd;
 y += vertspd;
 
 //animation
 if onground {
-	if move == 0 {
+	if input_move == 0 {
 		sprite_index = sPlayerIdle;
 		image_speed = 1;
 	}
@@ -77,7 +100,7 @@ if onground {
 	if vertspd > 0 && vertspd <= 3  image_index = 2;
 	if vertspd > 5 image_index = 3;
 }
-if move != 0 image_xscale = move;
+if input_move != 0 image_xscale = input_move;
 //sound
 soundcooldown--;
 /*if (onground){
@@ -102,19 +125,8 @@ if y > 450 {
 //screen wrap
 if x > room_width + 10 x = -9;
 if x < -10 x = room_width + 9;
-//bomb
-bombcooldown --;
 
-if input_bomb && bombcooldown <= 0 {
-	bombcooldown = 45;
-	with(instance_create_layer(x, y, "instances", oWaterbomb)){
-		image_speed = 0
-		direction = point_direction(x, y, mouse_x, mouse_y)
-		horizspd = lengthdir_x(12, direction);
-		vertspd = lengthdir_y(12, direction);
-	}
-	oHandtwo.bombthrown = true;
-}
+
 //draw text
 draw_set_color(c_white);
 draw_text(50, 50, "hello");

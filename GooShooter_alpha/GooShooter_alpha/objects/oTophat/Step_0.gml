@@ -7,11 +7,11 @@ if oPlayer.sprite_index = sPlayerIdle {
 	
 } else idleoffset = 0;
 
-image_angle = 0 + oPlayer.hsp * 6;
+image_angle = 0 + oPlayer.horizspd * 6;
 image_xscale = oPlayer.image_xscale;
 
 if oPlayer.vsp > 0 {
-	fallingoffset = oPlayer.vsp;
+	fallingoffset = oPlayer.vertspd;
 } else fallingoffset *= 0.5;
 
 x = oPlayer.x;
