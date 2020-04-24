@@ -13,14 +13,14 @@ if onground {
 	plyrinputaccel = 0.5;
 	afkdecel = 0.3;
 	hspdcap = 3;
-	vspdcap = 10;
+	vspdcap = 16;
 	hspdcapdecelfactor = 0.96;
 	vspdcapdecelfactor = 0.90;
 }else{ //airborne
 	plyrinputaccel = 0.32;
 	afkdecel = 0.05;
 	hspdcap = 3;
-	vspdcap = 10;
+	vspdcap = 16;
 	hspdcapdecelfactor = 0.96;
 	vspdcapdecelfactor = 0.90;
 }
