@@ -1,14 +1,14 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-hsp = lengthdir_x(spd, direction)
-vsp = lengthdir_y(spd, direction)
+horizspd = lengthdir_x(spd, direction)
+vertspd = lengthdir_y(spd, direction)
 
 image_angle = direction;
-if place_meeting(x + hsp, y, oWall) {
-	var onepixel = sign(hsp);
+if place_meeting(x + horizspd, y, oWall) {
+	var onepixel = sign(horizspd);
 	while(!place_meeting(x + onepixel, y, oWall)) x += onepixel;
-	hsp = 0;
-	vsp = 0;
+	horizspd = 0;
+	vertspd = 0;
 	if onepixel wallhitside = 90 else wallhitside = 270;
 	hit = true;
 	if onepixel = 1 walldirection = 0; else walldirection = 2;
@@ -17,11 +17,11 @@ if place_meeting(x + hsp, y, oWall) {
 }
 
 //vertical collision
-if place_meeting(x, y + vsp, oWall) {
-	var onepixel = sign(vsp);
+if place_meeting(x, y + vertspd, oWall) {
+	var onepixel = sign(vertspd);
 	while(!place_meeting(x, y + onepixel, oWall)) y += onepixel;
-	vsp = 0;
-	hsp = 0;
+	vertspd = 0;
+	horizspd = 0;
 	if onepixel wallhitside = 0 else wallhitside = 180;
 	hit = true;
 	if onepixel = 1 walldirection = 3; else walldirection = 1;
@@ -35,5 +35,5 @@ if hit {
 	hit = false;
 }
 
-x += hsp
-y += vsp
+x += horizspd
+y += vertspd

@@ -109,7 +109,7 @@ if onground {
 		image_speed = 1;
 	}
 	else {
-		if abs(horizspd) > 1.5 {
+		if abs(horizspd) > 2 {
 			sprite_index = sPlayerRunning;
 			image_speed = abs(horizspd);
 		}

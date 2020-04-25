@@ -1,8 +1,8 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-hsp = lengthdir_x(spd, direction);
-vsp = lengthdir_y(spd, direction);
-vsp += grv;
+horizspd = lengthdir_x(spd, direction);
+vertspd = lengthdir_y(spd, direction);
+vertspd += gravity_custom;
 spd *= 0.7;
 
 if spd < 0.5 && !deathcounterenabled {
@@ -16,5 +16,5 @@ if deathcounter < 0 && deathcounter > -5 instance_destroy();
 	instance_destroy();
 }
 */
-x += hsp;
-y += vsp;
+x += horizspd;
+y += vertspd;
