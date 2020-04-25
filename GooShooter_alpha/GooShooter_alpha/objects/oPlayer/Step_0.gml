@@ -13,14 +13,14 @@ if onground {
 	plyrinputaccel = 0.8;
 	afkdecel = 0.2;
 	hspdcap = 3.8;
-	vspdcap = 16;
+	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.80;
 }else{ //airborne
 	plyrinputaccel = 0.6;
 	afkdecel = 0.05;
 	hspdcap = 3.8;
-	vspdcap = 16;
+	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.80;
 }
@@ -102,6 +102,13 @@ if input_bomb && bombcooldown <= 0 {
 x += horizspd;
 y += vertspd;
 
+//airborne timer 
+if onground {
+	airbornetimer = 0;
+}else{
+	airbornetimer ++;
+}
+
 //animation
 if onground {
 	if input_move == 0 {
@@ -115,11 +122,13 @@ if onground {
 		}
 	}
 } else {
-	sprite_index = sPlayerJumping;
-	if vertspd <= -5 image_index = 0;
-	if vertspd <= 0 && vertspd > -3 image_index = 1;
-	if vertspd > 0 && vertspd <= 3  image_index = 2;
-	if vertspd > 5 image_index = 3;
+	if airbornetimer > 2 {
+		sprite_index = sPlayerJumping;
+		if vertspd <= -5 {image_index = 0;}
+		if vertspd <= 0 && vertspd > -3 {image_index = 1;}
+		if vertspd > 0 && vertspd <= 3  {image_index = 2;}
+		if vertspd > 5 {image_index = 3;}
+	}
 }
 if input_move != 0 image_xscale = input_move;
 //sound

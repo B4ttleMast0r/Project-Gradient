@@ -30,6 +30,7 @@ divnumb = 0.9;*/
 
 
 //animation
+airbornetimer = 0;
 globalanimationreset = 0;
 
 
