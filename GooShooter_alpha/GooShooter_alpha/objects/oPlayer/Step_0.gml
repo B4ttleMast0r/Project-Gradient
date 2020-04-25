@@ -11,14 +11,14 @@ var input_move = input_right - input_left;
 onground = place_meeting(x, y + 1, oWall);
 if onground {
 	plyrinputaccel = 0.8;
-	afkdecel = 0.2;
+	afkdecel = 0.5;
 	hspdcap = 3.8;
 	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.80;
 }else{ //airborne
 	plyrinputaccel = 0.6;
-	afkdecel = 0.05;
+	afkdecel = 0.1;
 	hspdcap = 3.8;
 	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
