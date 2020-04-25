@@ -10,19 +10,19 @@ var input_move = input_right - input_left;
 //onground or not, initiate movement physics stats
 onground = place_meeting(x, y + 1, oWall);
 if onground {
-	plyrinputaccel = 0.5;
-	afkdecel = 0.3;
-	hspdcap = 3;
+	plyrinputaccel = 0.8;
+	afkdecel = 0.2;
+	hspdcap = 3.8;
 	vspdcap = 16;
-	hspdcapdecelfactor = 0.96;
-	vspdcapdecelfactor = 0.90;
+	hspdcapdecelfactor = 0.88;
+	vspdcapdecelfactor = 0.80;
 }else{ //airborne
-	plyrinputaccel = 0.32;
+	plyrinputaccel = 0.6;
 	afkdecel = 0.05;
-	hspdcap = 3;
+	hspdcap = 3.8;
 	vspdcap = 16;
-	hspdcapdecelfactor = 0.96;
-	vspdcapdecelfactor = 0.90;
+	hspdcapdecelfactor = 0.88;
+	vspdcapdecelfactor = 0.80;
 }
 
 //accelerate based on player input
@@ -51,7 +51,7 @@ if input_jump {
 //ground jump
 if jumprequesttimer > 0 && onground == true{
 		jumprequesttimer = 0;
-		vertspd = -7.2;
+		vertspd = -8.6;
 }
 
 //gravity

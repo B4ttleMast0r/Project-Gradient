@@ -6,7 +6,7 @@
 
 if direction < 90 || direction > 270 image_yscale = 1 else image_yscale = -1
 /*
-if oPlayer.hsp == 0 {
+if oPlayer.horizspd == 0 {
 		sprite_index = sWeaponIdle;
 	}
 	else {
@@ -64,25 +64,25 @@ if mouse_check_button_pressed(mb_left){
 			var shotspeed = 1;
 			var a = shotspeed*2/3
 			var angle = oWeapon.direction
-			if angle < 22.5 || angle > 337.5 hsp += -shotspeed
-			if angle < 202.5 && angle > 157.5 hsp += shotspeed
-			if angle < 112.5 && angle > 67.5 vsp += shotspeed
-			if angle < 292.5 && angle > 247.5 vsp += -shotspeed
+			if angle < 22.5 || angle > 337.5 horizspd += -shotspeed
+			if angle < 202.5 && angle > 157.5 horizspd += shotspeed
+			if angle < 112.5 && angle > 67.5 vertspd += shotspeed
+			if angle < 292.5 && angle > 247.5 vertspd += -shotspeed
 			if angle < 67.5 && angle > 22.5 { 
-				hsp += -a
-				vsp += a
+				horizspd += -a
+				vertspd += a
 			}
 			if angle < 157.5 && angle > 112.5 { 
-				hsp += a
-				vsp += a
+				horizspd += a
+				vertspd += a
 			}
 			if angle < 247.5 && angle > 202.5 { 
-				hsp += a
-				vsp += -a
+				horizspd += a
+				vertspd += -a
 			}
 			if angle < 337.5 && angle > 292.5 { 
-				hsp += -a
-				vsp += -a
+				horizspd += -a
+				vertspd += -a
 			}
 		}
 	}

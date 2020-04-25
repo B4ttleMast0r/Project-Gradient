@@ -21,7 +21,7 @@ vspdcap = 0
 hspdcapdecelfactor = 1;
 vspdcapdecelfactor = 1;
 
-gravity_custom = 0.4;
+gravity_custom = 0.44;
 
 /*acc = 0.5;
 dcc = 0.2;
