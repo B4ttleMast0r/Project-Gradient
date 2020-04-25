@@ -106,13 +106,27 @@ if !recoil < 1 {
 
 image_index = global.imagenumb;
 if point_direction(x, y, mouse_x, mouse_y) < 90 || point_direction(x, y, mouse_x, mouse_y) > 270 {
-	directionoffset = -1 * oPlayer.image_xscale
+	directionoffset = -2 * oPlayer.image_xscale
 }else{
 	directionoffset = -2 * oPlayer.image_xscale
 	
 }
 
+if oPlayer.image_index < 0 {
+	idleoffset = 0
+}
+if oPlayer.image_index > 0 && oPlayer.image_index > 1 {
+	idleoffset = -2
+}
+if oPlayer.image_index > 1 && oPlayer.image_index > 2 {
+	idleoffset = -1
+}
+if oPlayer.image_index > 2 && oPlayer.image_index > 3 {
+	idleoffset = 0
+}
+
+
 
 
 x = oPlayer.x  + directionoffset;
-y = oPlayer.y - 8 + idleoffset;
+y = oPlayer.y - 8 - idleoffset;
