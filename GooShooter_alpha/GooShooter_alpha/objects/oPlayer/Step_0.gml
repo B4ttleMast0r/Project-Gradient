@@ -130,9 +130,12 @@ if onground {
 		if vertspd > 5 {image_index = 3;}
 	}
 }
+//flip sprite
 if input_move != 0 image_xscale = input_move;
+
 //sound
 soundcooldown--;
+
 /*if (onground){
 	if (soundcooldown < 1) {
 		if (image_index > 3 && image_index < 4) || (image_index > 7 && image_index < 8) {
