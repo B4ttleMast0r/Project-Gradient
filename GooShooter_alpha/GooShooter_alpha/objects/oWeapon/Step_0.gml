@@ -4,7 +4,7 @@
 
 
 
-if direction < 90 || direction > 270 image_yscale = 1 else image_yscale = -1
+if point_direction(x, y, mouse_x, mouse_y) < 90 || point_direction(x, y, mouse_x, mouse_y) > 270 image_yscale = 1 else image_yscale = -1
 /*
 if oPlayer.horizspd == 0 {
 		sprite_index = sWeaponIdle;
