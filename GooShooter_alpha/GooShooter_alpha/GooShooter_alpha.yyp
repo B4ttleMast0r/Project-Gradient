@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "17532fec-2591-4fda-be05-ea5cc4b78a34",
+            "Value": {
+                "id": "52e6ee24-ded2-4232-821d-0e9ea96b2d60",
+                "resourcePath": "sprites\\sWeaponIdlenew\\sWeaponIdlenew.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1830e56d-7cf4-4c87-bdd0-51d8629a0134",
             "Value": {
                 "id": "42ca9059-6cd0-47aa-a78c-02e56716743a",

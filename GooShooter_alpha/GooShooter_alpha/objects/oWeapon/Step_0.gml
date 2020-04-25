@@ -51,7 +51,7 @@ if oPlayer.sprite_index = sPlayerRunning && recoil < 1{
 } else {
 	followmouse = true;
 	image_angle = direction;
-	sprite_index = sWeaponIdle;
+	sprite_index = sWeaponIdlenew;
 }
 
 if mouse_check_button_pressed(mb_left){
@@ -105,6 +105,14 @@ if !recoil < 1 {
 }
 
 image_index = global.imagenumb;
+if point_direction(x, y, mouse_x, mouse_y) < 90 || point_direction(x, y, mouse_x, mouse_y) > 270 {
+	directionoffset = -1 * oPlayer.image_xscale
+}else{
+	directionoffset = -2 * oPlayer.image_xscale
+	
+}
+
+
+
 x = oPlayer.x  + directionoffset;
 y = oPlayer.y - 8 + idleoffset;
-
