@@ -61,7 +61,7 @@ if mouse_check_button_pressed(mb_left){
 	with (instance_create_layer(x, y, "Instances", oShot)) {
 		direction = oWeapon.direction + random_range(-5,5)
 		with(oPlayer){
-			var shotspeed = 2;
+			var shotspeed = 1.4;
 			var a = shotspeed*2/3
 			var angle = oWeapon.direction
 			if angle < 22.5 || angle > 337.5 horizspd += -shotspeed

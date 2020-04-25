@@ -122,7 +122,7 @@ if onground {
 		}
 	}
 } else {
-	if airbornetimer > 2 {
+	if airbornetimer > 6 || vertspd < -3  {
 		sprite_index = sPlayerJumping;
 		if vertspd <= -5 {image_index = 0;}
 		if vertspd <= 0 && vertspd > -3 {image_index = 1;}
