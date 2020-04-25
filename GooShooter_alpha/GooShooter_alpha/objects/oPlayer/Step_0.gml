@@ -102,6 +102,10 @@ if input_bomb && bombcooldown <= 0 {
 x += horizspd;
 y += vertspd;
 
+//screen wrap
+if x >= room_width + 10 {x = (-10) + (x-(room_width+10));}
+if x <= -10 {x = (room_width + 10) + x;}
+
 //airborne timer 
 if onground {
 	airbornetimer = 0;
@@ -147,17 +151,17 @@ soundcooldown--;
 }
 */		
 
-//room reload
-if keyboard_check_pressed(ord("R")) game_restart();
+
 /*
 if y > 450 {
 	x = 64;
 	y = 336;
 }
 */
-//screen wrap
-if x > room_width + 10 x = -9;
-if x < -10 x = room_width + 9;
+
+//room reload
+if keyboard_check_pressed(ord("R")) game_restart();
+
 
 
 //draw text
