@@ -51,7 +51,7 @@ if oPlayer.sprite_index = sPlayerRunning && recoil < 1 {
 } else {
 	followmouse = true;
 	image_angle = direction;
-		if (((point_direction(x, y, mouse_x, mouse_y) > 88 && point_direction(x, y, mouse_x, mouse_y) < 92) || (point_direction(x, y, mouse_x, mouse_y) > 268 && point_direction(x, y, mouse_x, mouse_y) < 272)) && recoil < 1) {
+		if (((point_direction(x, y, mouse_x, mouse_y) > 85 && point_direction(x, y, mouse_x, mouse_y) < 95) || (point_direction(x, y, mouse_x, mouse_y) > 260 && point_direction(x, y, mouse_x, mouse_y) < 280)) && recoil < 1) {
 		sprite_index = sWeaponTopAndBot;
 	}else{
 		sprite_index = sWeaponIdlenew;
