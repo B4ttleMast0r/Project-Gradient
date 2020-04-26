@@ -19,12 +19,8 @@ if onground {
 	vspdcapdecelfactor = 0.80;
 }else{ //airborne
 	plyrinputaccel = 0.6;
-	afkdecel = 0.3;
-
-	hspdcap = 3.5;
-
+	afkdecel = 0.2;
 	hspdcap = 3.8;
-
 	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.80;
@@ -62,10 +58,10 @@ if jumprequesttimer > 0 && jumpbuffer > 0{
 		vertspd = -7;
 		jumping_upwards = true;
 }
-
 if vertspd > 0 {
 	jumping_upwards = false;
 }
+
 //make the jumpheight greater, the longer you press the button
 if (!input_jump_held && vertspd < 0 && vertspd > - 7) {
 	vertspd *= 0.8;
