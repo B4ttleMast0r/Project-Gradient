@@ -1,5 +1,5 @@
 /// @description oWaterfalls
-vertspd += oPlayer.gravity_custom
+vertspd += oPlayer.gravity_custom;
 
 
 //horizontal collision
@@ -27,10 +27,10 @@ if hit {
 			var bombspeed = 10;
 			var a = bombspeed*2/3
 			var angle = point_direction(x,y,oWaterbomb.x,oWaterbomb.y)
-			if angle < 22.5 || angle > 337.5 horizspd -= bombspeed
-			if angle < 202.5 && angle > 157.5 horizspd += bombspeed
-			if angle < 112.5 && angle > 67.5 vertspd += bombspeed
-			if angle < 292.5 && angle > 247.5 vertspd -= bombspeed
+			if angle < 22.5 || angle > 337.5 horizspd = -bombspeed
+			if angle < 202.5 && angle > 157.5 horizspd = bombspeed
+			if angle < 112.5 && angle > 67.5 vertspd = bombspeed
+			if angle < 292.5 && angle > 247.5 vertspd = -bombspeed
 			if angle < 67.5 && angle > 22.5 { 
 				horizspd = -a
 				vertspd = a

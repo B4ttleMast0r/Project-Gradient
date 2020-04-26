@@ -4,6 +4,7 @@
 input_left = false;
 input_right = false;
 input_jump = false;
+input_jump_held = false;
 jumprequesttimer = 0; /*if the player wants to jump this timer gets activated. 
 So he can press jump before hitting the ground and will jump when reaching it.*/
 input_bomb = false;
@@ -21,7 +22,9 @@ vspdcap = 0
 hspdcapdecelfactor = 1;
 vspdcapdecelfactor = 1;
 
-gravity_custom = 0.44;
+jumpingupwards = false;
+
+gravity_custom = 0.4;
 
 /*acc = 0.5;
 dcc = 0.2;

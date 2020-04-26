@@ -2,6 +2,7 @@
 input_left = keyboard_check(ord("A"));
 input_right = keyboard_check(ord("D"));
 input_jump = keyboard_check_pressed(ord("W"));
+input_jump_held = keyboard_check(ord("W"));
 input_bomb = mouse_check_button_pressed(mb_right);
 
 var input_move = input_right - input_left;
@@ -10,16 +11,16 @@ var input_move = input_right - input_left;
 //onground or not, initiate movement physics stats
 onground = place_meeting(x, y + 1, oWall);
 if onground {
-	plyrinputaccel = 0.8;
+	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
-	hspdcap = 3.8;
+	hspdcap = 3.5;
 	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.80;
 }else{ //airborne
 	plyrinputaccel = 0.6;
-	afkdecel = 0.1;
-	hspdcap = 3.8;
+	afkdecel = 0.3;
+	hspdcap = 3.5;
 	vspdcap = 12;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.80;
@@ -51,8 +52,16 @@ if input_jump {
 //ground jump
 if jumprequesttimer > 0 && onground == true{
 		jumprequesttimer = 0;
-		vertspd = -8.6;
+		vertspd = -7;
+		jumping_upwards = true;
 }
+if vertspd > 0 {
+	jumping_upwards = false;
+}
+//make the jumpheight greater, the longer you press the button
+if (!input_jump_held && vertspd < 0 && vertspd > - 7) {
+	vertspd *= 0.8;
+} 
 
 //gravity
 vertspd += gravity_custom;
@@ -122,7 +131,7 @@ if onground {
 	else {
 		if abs(horizspd) > 2 {
 			sprite_index = sPlayerRunning;
-			image_speed = abs(horizspd);
+			image_speed = abs(horizspd) * 1.3;
 		}
 	}
 } else {
