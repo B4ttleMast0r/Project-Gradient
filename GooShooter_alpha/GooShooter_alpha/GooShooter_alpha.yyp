@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "7acbed0d-7a36-4287-9186-6cd8f78b5e12",
+            "Value": {
+                "id": "42ce31f4-22a9-4ff8-9153-f1f1627c31dc",
+                "resourcePath": "sprites\\sWeaponTopAndBot\\sWeaponTopAndBot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8214ccf1-58d8-4280-b707-0a59c4cf9bb4",
             "Value": {
                 "id": "43a69ce2-c6f6-4834-832d-30eb4cba7bd4",
