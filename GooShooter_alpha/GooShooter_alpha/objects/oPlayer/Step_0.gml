@@ -49,8 +49,8 @@ if input_jump {
 }else {
 	jumprequesttimer --;
 }
-if onground jumpbuffer = 10;
-jumpbuffer --;
+if onground {jumpbuffer = 4;}
+else{ jumpbuffer--;}
 //ground jump
 if jumprequesttimer > 0 && jumpbuffer > 0{
 		jumprequesttimer = 0;
