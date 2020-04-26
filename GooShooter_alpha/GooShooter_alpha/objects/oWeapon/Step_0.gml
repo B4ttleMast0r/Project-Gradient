@@ -68,7 +68,7 @@ if mouse_check_button_pressed(mb_left){
 		direction = oWeapon.direction + random_range(-5,5)
 		with(oPlayer){
 			var shotspeed = 1.4;
-			var a = sqrt((shotspeed^2)/2)
+			var a = sqrt((shotspeed * shotspeed)/2)
 			var angle = oWeapon.direction
 			if angle < 22.5 || angle > 337.5 horizspd += -shotspeed
 			if angle < 202.5 && angle > 157.5 horizspd += shotspeed
