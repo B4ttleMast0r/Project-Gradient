@@ -7,6 +7,7 @@ input_jump = false;
 input_jump_held = false;
 jumprequesttimer = 0; /*if the player wants to jump this timer gets activated. 
 So he can press jump before hitting the ground and will jump when reaching it.*/
+jumpbuffer = 0; //if the player wants to jump, but has just left the ground he should still jump
 input_bomb = false;
 
 

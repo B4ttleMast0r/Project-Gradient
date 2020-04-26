@@ -49,12 +49,16 @@ if input_jump {
 }else {
 	jumprequesttimer --;
 }
+if onground jumpbuffer = 10;
+jumpbuffer --;
 //ground jump
-if jumprequesttimer > 0 && onground == true{
+if jumprequesttimer > 0 && jumpbuffer > 0{
 		jumprequesttimer = 0;
+		jumpbuffer = 0;
 		vertspd = -7;
 		jumping_upwards = true;
 }
+
 if vertspd > 0 {
 	jumping_upwards = false;
 }
