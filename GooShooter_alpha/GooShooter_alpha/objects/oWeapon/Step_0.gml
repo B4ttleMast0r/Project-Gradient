@@ -43,7 +43,7 @@ if x-mouse_x > 0 {
 }
 
 //decides, wether or not to aim towards the mouse
-if oPlayer.sprite_index = sPlayerRunning && recoil < 1{
+if oPlayer.sprite_index = sPlayerRunning && recoil < 1 {
 	followmouse = false;
 	image_yscale = sign(oPlayer.horizspd);
 	image_angle = sign(oPlayer.horizspd) * 90 + 270;
@@ -51,8 +51,14 @@ if oPlayer.sprite_index = sPlayerRunning && recoil < 1{
 } else {
 	followmouse = true;
 	image_angle = direction;
-	sprite_index = sWeaponIdlenew;
+		if (((point_direction(x, y, mouse_x, mouse_y) > 88 && point_direction(x, y, mouse_x, mouse_y) < 92) || (point_direction(x, y, mouse_x, mouse_y) > 268 && point_direction(x, y, mouse_x, mouse_y) < 272)) && recoil < 1) {
+		sprite_index = sWeaponTopAndBot;
+	}else{
+		sprite_index = sWeaponIdlenew;
+	}
 }
+
+	
 
 if mouse_check_button_pressed(mb_left){
 	audio_sound_pitch(sn_pistolshot1, random_range(0.8, 1.2));
