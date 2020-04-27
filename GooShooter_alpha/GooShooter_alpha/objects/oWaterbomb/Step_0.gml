@@ -25,13 +25,13 @@ if hit {
 	if point_distance(oPlayer.x,oPlayer.y,x,y) < bombrange {
 		with(oPlayer){
 			hitbybomb = true;
-			var bombspeed = 10;
-			var a = sqrt((bombspeed * bombspeed)/2)
+			knockbackspeed = 10;
+			var a = sqrt((knockbackspeed * knockbackspeed)/2)
 			var angle = point_direction(x,y,oWaterbomb.x,oWaterbomb.y)
-			if angle < 22.5 || angle > 337.5 horizspd = -bombspeed
-			if angle < 202.5 && angle > 157.5 horizspd = bombspeed
-			if angle < 112.5 && angle > 67.5 vertspd = bombspeed
-			if angle < 292.5 && angle > 247.5 vertspd = -bombspeed
+			if angle < 22.5 || angle > 337.5 horizspd = -knockbackspeed
+			if angle < 202.5 && angle > 157.5 horizspd = knockbackspeed
+			if angle < 112.5 && angle > 67.5 vertspd = knockbackspeed
+			if angle < 292.5 && angle > 247.5 vertspd = -knockbackspeed
 			if angle < 67.5 && angle > 22.5 { 
 				horizspd = -a
 				vertspd = a

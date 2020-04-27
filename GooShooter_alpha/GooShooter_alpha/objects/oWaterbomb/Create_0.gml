@@ -2,6 +2,7 @@
 
 horizspd = 0
 vertspd = 0
+knockbackspeed = 0;
 
 wallhitside = 0
 hit = 0
