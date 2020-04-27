@@ -24,6 +24,7 @@ if place_meeting(x, y + vertspd, oWall) {
 if hit {
 	if point_distance(oPlayer.x,oPlayer.y,x,y) < bombrange {
 		with(oPlayer){
+			hitbybomb = true;
 			var bombspeed = 10;
 			var a = sqrt((bombspeed * bombspeed)/2)
 			var angle = point_direction(x,y,oWaterbomb.x,oWaterbomb.y)

@@ -4,8 +4,7 @@ input_right = keyboard_check(ord("D"));
 input_jump = keyboard_check_pressed(ord("W"));
 input_jump_held = keyboard_check(ord("W"));
 input_bomb = mouse_check_button_pressed(mb_right);
-
-var input_move = input_right - input_left;
+input_move = input_right - input_left;
 
 
 //onground
@@ -25,16 +24,16 @@ if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
 	hspdcap = 3.5;
-	vspdcap = 12;
+	vspdcap = 14;
 	hspdcapdecelfactor = 0.88;
-	vspdcapdecelfactor = 0.80;
+	vspdcapdecelfactor = 0.70;
 }else{ //airborne
 	plyrinputaccel = 0.6;
 	afkdecel = 0.2;
 	hspdcap = 3.8;
-	vspdcap = 12;
+	vspdcap = 14;
 	hspdcapdecelfactor = 0.88;
-	vspdcapdecelfactor = 0.80;
+	vspdcapdecelfactor = 0.70;
 }
 
 //accelerate based on player input
@@ -82,8 +81,11 @@ if vertspd >= 0 && onground == false {
 }
 jumpingupwards = duringjump == true && apexreached == false;
 
+if onground {
+	hitbybomb = false;
+}
 //make the jumpheight greater, the longer you press the button
-if (!input_jump_held && jumpingupwards){
+if (!input_jump_held && jumpingupwards && !hitbybomb){
 	gravity_custom = gravity_custom * shortjumpgrvtyfactor;
 } 
 
@@ -195,6 +197,6 @@ if x < -10 x = room_width + 9;
 
 
 //draw text
-draw_set_color(c_white);
+/*draw_set_color(c_white);
 draw_text(50, 50, "hello");
-global.imagenumb = image_index;
+global.imagenumb = image_index;*/

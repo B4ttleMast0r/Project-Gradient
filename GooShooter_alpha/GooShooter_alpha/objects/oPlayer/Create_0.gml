@@ -3,11 +3,13 @@
 //inputs
 input_left = false;
 input_right = false;
+input_move = 0;
 input_jump = false;
 input_jump_held = false;
 jumprequesttimer = 0; /*if the player wants to jump this timer gets activated. 
 So he can press jump before hitting the ground and will jump when reaching it.*/
 input_bomb = false;
+
 
 
 //movement
@@ -28,6 +30,7 @@ duringjump = false;
 apexreached = false;
 jumpingupwards = false;
 latejumpused = false; //if the player wants to jump, but has just left the ground he should still jump
+hitbybomb = false; //if the player was hit by a bomb during the current jump
 
 /*acc = 0.5;
 dcc = 0.2;
