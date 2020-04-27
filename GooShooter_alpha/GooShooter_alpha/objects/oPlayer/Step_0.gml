@@ -8,8 +8,19 @@ input_bomb = mouse_check_button_pressed(mb_right);
 var input_move = input_right - input_left;
 
 
-//onground or not, initiate movement physics stats
+//onground
 onground = place_meeting(x, y + 1, oWall);
+
+//airborne timer 
+if onground {
+	airbornetimer = 0;
+}else{
+	airbornetimer ++;
+}
+
+//initiate movement physics stats
+gravity_custom = 0.4;
+shortjumpgrvtyfactor = 2.6; //the higher this is, the lower the minimum jump height is
 if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
@@ -43,6 +54,10 @@ if horizspd < 0 {
 	}
 }
 
+//during jump update
+if onground {
+	duringjump = false;
+}
 //jumpbuffer
 if input_jump {
 	jumprequesttimer = 6;
@@ -50,24 +65,26 @@ if input_jump {
 	jumprequesttimer --;
 }
 if onground {
-	jumpbuffer = 4;
-}else {
-	jumpbuffer--;
+	latejumpused = false;
 }
 //ground jump
-if jumprequesttimer > 0 && jumpbuffer > 0{
+if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == false)) {
 		jumprequesttimer = 0;
-		jumpbuffer = 0;
+		if onground == false {
+			latejumpused = true
+		}
 		vertspd = -8;
-		jumping_upwards = true;
+		duringjump = true;
+		apexreached = false;
 }
-if vertspd > 0 {
-	jumping_upwards = false;
+if vertspd >= 0 && onground == false {
+	apexreached= true;
 }
+jumpingupwards = duringjump == true && apexreached == false;
 
 //make the jumpheight greater, the longer you press the button
-if (!input_jump_held && vertspd < 0 && vertspd > - 7) {
-	vertspd *= 0.8;
+if (!input_jump_held && jumpingupwards){
+	gravity_custom = gravity_custom * shortjumpgrvtyfactor;
 } 
 
 //gravity
@@ -106,8 +123,8 @@ bombcooldown --;
 if input_bomb && bombcooldown <= 0 {
 	bombcooldown = 45;
 	with(instance_create_layer(x, y, "instances", oWaterbomb)){
-		image_speed = 0
-		direction = point_direction(x, y, mouse_x, mouse_y)
+		image_speed = 0;
+		direction = point_direction(x, y, mouse_x, mouse_y);
 		horizspd = lengthdir_x(12, direction);
 		vertspd = lengthdir_y(12, direction);
 	}
@@ -118,11 +135,12 @@ if input_bomb && bombcooldown <= 0 {
 x += horizspd;
 y += vertspd;
 
-//airborne timer 
+//update onground
+onground = place_meeting(x, y + 1, oWall);
 if onground {
 	airbornetimer = 0;
-}else{
-	airbornetimer ++;
+	duringjump = false;
+	apexreached = false;
 }
 
 //animation
