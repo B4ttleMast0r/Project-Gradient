@@ -123,8 +123,8 @@ bombcooldown --;
 if input_bomb && bombcooldown <= 0 {
 	bombcooldown = 45;
 	with(instance_create_layer(x, y, "instances", oWaterbomb)){
-		image_speed = 0
-		direction = point_direction(x, y, mouse_x, mouse_y)
+		image_speed = 0;
+		direction = point_direction(x, y, mouse_x, mouse_y);
 		horizspd = lengthdir_x(12, direction);
 		vertspd = lengthdir_y(12, direction);
 	}
@@ -197,4 +197,4 @@ if x < -10 x = room_width + 9;
 //draw text
 draw_set_color(c_white);
 draw_text(50, 50, "hello");
-global.imagenumb = horizspd;
+global.imagenumb = image_index;
