@@ -8,8 +8,17 @@ input_bomb = mouse_check_button_pressed(mb_right);
 var input_move = input_right - input_left;
 
 
-//onground or not, initiate movement physics stats
+//onground
 onground = place_meeting(x, y + 1, oWall);
+
+//airborne timer 
+if onground {
+	airbornetimer = 0;
+}else{
+	airbornetimer ++;
+}
+
+//initiate movement physics stats
 if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
@@ -50,18 +59,18 @@ if input_jump {
 	jumprequesttimer --;
 }
 if onground {
-	jumpbuffer = 4;
-}else {
-	jumpbuffer--;
+	latejumpused = false;
 }
 //ground jump
-if jumprequesttimer > 0 && jumpbuffer > 0{
+if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == false)) {
 		jumprequesttimer = 0;
-		jumpbuffer = 0;
+		if onground == false {
+			latejumpused = true
+		}
 		vertspd = -8;
 		jumping_upwards = true;
 }
-if vertspd > 0 {
+if vertspd >= 0 {
 	jumping_upwards = false;
 }
 
@@ -118,11 +127,10 @@ if input_bomb && bombcooldown <= 0 {
 x += horizspd;
 y += vertspd;
 
-//airborne timer 
+//update onground
+onground = place_meeting(x, y + 1, oWall);
 if onground {
 	airbornetimer = 0;
-}else{
-	airbornetimer ++;
 }
 
 //animation
