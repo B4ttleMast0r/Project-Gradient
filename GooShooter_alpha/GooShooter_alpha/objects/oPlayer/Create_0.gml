@@ -11,7 +11,6 @@ So he can press jump before hitting the ground and will jump when reaching it.*/
 input_bomb = false;
 
 
-
 //movement
 onground = false;
 
@@ -31,6 +30,10 @@ apexreached = false;
 jumpingupwards = false;
 latejumpused = false; //if the player wants to jump, but has just left the ground he should still jump
 hitbybomb = false; //if the player was hit by a bomb during the current jump
+
+bombposition[0] = 0;
+bombposition[1] = 0;
+bombrange = 88;
 
 /*acc = 0.5;
 dcc = 0.2;
