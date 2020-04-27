@@ -1,9 +1,12 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
+originx = oPlayer.bombposition[0];
+originy = oPlayer.bombposition[1];
+existrange = oPlayer.bombrange;
 horizspd = lengthdir_x(spd, direction);
 vertspd = lengthdir_y(spd, direction);
 vertspd += gravity_custom;
-spd *= 0.8;
+spd *= 0.90;
 
 /*if spd < 0.5 && !deathcounterenabled {
 	deathcounter = 10;
