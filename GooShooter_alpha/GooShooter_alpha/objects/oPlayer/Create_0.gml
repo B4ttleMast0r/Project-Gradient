@@ -22,7 +22,7 @@ vspdcap = 0
 hspdcapdecelfactor = 1;
 vspdcapdecelfactor = 1;
 
-gravity_custom = 0.4;
+gravity_custom = 0;
 
 duringjump = false;
 apexreached = false;

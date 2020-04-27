@@ -19,6 +19,8 @@ if onground {
 }
 
 //initiate movement physics stats
+gravity_custom = 0.4;
+shortjumpgrvtyfactor = 2.6;
 if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
@@ -78,11 +80,11 @@ if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == f
 if vertspd >= 0 && onground == false {
 	apexreached= true;
 }
-jumpingupwards = duringjump && apexreached == false;
+jumpingupwards = duringjump == true && apexreached == false;
 
 //make the jumpheight greater, the longer you press the button
 if (!input_jump_held && jumpingupwards){
-	vertspd *= 0.8;
+	gravity_custom = gravity_custom * shortjumpgrvtyfactor;
 } 
 
 //gravity
