@@ -20,7 +20,7 @@ if onground {
 
 //initiate movement physics stats
 gravity_custom = 0.4;
-shortjumpgrvtyfactor = 2.6;
+shortjumpgrvtyfactor = 2.6; //the higher this is, the lower the minimum jump height is
 if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
