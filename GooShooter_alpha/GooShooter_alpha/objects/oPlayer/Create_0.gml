@@ -43,7 +43,8 @@ globalanimationreset = 0;
 //bomb
 bombcooldown = 0;
 
-//imagenumb stores the image index
+//imagenumb stores the hoizontal speed
 global.imagenumb = 0;
+
 //sound
 soundcooldown = 0;
