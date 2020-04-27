@@ -171,10 +171,10 @@ if y > 450 {
 	y = 336;
 }
 */
-//screen wrap
+/*screen wrap
 if x > room_width + 10 x = -9;
 if x < -10 x = room_width + 9;
-
+*/
 
 //draw text
 draw_set_color(c_white);
