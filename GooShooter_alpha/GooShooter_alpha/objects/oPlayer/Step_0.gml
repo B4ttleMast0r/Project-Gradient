@@ -52,6 +52,10 @@ if horizspd < 0 {
 	}
 }
 
+//during jump update
+if onground {
+	duringjump = false;
+}
 //jumpbuffer
 if input_jump {
 	jumprequesttimer = 6;
@@ -68,14 +72,16 @@ if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == f
 			latejumpused = true
 		}
 		vertspd = -8;
-		jumping_upwards = true;
+		duringjump = true;
+		apexreached = false;
 }
-if vertspd >= 0 {
-	jumping_upwards = false;
+if vertspd >= 0 && onground == false {
+	apexreached= true;
 }
+jumpingupwards = duringjump && apexreached == false;
 
 //make the jumpheight greater, the longer you press the button
-if (!input_jump_held && vertspd < 0 && vertspd > - 7) {
+if (!input_jump_held && jumpingupwards){
 	vertspd *= 0.8;
 } 
 
@@ -131,6 +137,8 @@ y += vertspd;
 onground = place_meeting(x, y + 1, oWall);
 if onground {
 	airbornetimer = 0;
+	duringjump = false;
+	apexreached = false;
 }
 
 //animation
