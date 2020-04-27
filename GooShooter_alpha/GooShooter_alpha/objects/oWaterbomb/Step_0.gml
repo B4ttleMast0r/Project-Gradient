@@ -9,7 +9,7 @@ vertspd += oPlayer.gravity_custom;
 //horizontal collision
 if place_meeting(x + horizspd, y, oWall) {
 	var onepixel = sign(horizspd);
-	while(!place_meeting(x + onepixel, y, oWall)) x += onepixel;
+	while(!place_meeting(x + onepixel, y, oWall)) {x += onepixel;}
 	horizspd = -horizspd;
 	if onepixel {wallhitside = 90} else {wallhitside = 270;}
 	hit = true;
@@ -19,7 +19,7 @@ if place_meeting(x + horizspd, y, oWall) {
 //vertical collision
 if place_meeting(x, y + vertspd, oWall) {
 	var onepixel = sign(vertspd);
-	while(!place_meeting(x, y + onepixel, oWall)) y += onepixel;
+	while(!place_meeting(x, y + onepixel, oWall)) {y += onepixel;}
 	vertspd = -vertspd;
 	if onepixel {wallhitside = 0} else {wallhitside = 180;}
 	hit = true;
