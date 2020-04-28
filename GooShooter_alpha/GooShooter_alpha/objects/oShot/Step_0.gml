@@ -4,6 +4,7 @@ horizspd = lengthdir_x(spd, direction)
 vertspd = lengthdir_y(spd, direction)
 
 image_angle = direction;
+//horizontal collision
 if place_meeting(x + horizspd, y, oWall) {
 	var onepixel = sign(horizspd);
 	while(!place_meeting(x + onepixel, y, oWall)) x += onepixel;
@@ -23,16 +24,30 @@ if place_meeting(x, y + vertspd, oWall) {
 	vertspd = 0;
 	horizspd = 0;
 	if onepixel wallhitside = 0 else wallhitside = 180;
-	hit = true;
+	wallhit = true;
 	if onepixel = 1 walldirection = 3; else walldirection = 1;
 	image_speed = 5
 	image_angle = walldirection * 90;
 }
 
-if hit {
+//enemy collision
+if place_meeting(x, y, oDummy) {
+	with (oDummy) {
+		horizspd = oShot.horizspd;
+		vertspd = (oShot.vertspd - 4) * 0.75;
+	}
+	repeat(5){
+		with (instance_create_layer(x, y, "Instances", oDummyParticle)) {
+			direction = oShot.direction + random_range(-10, 10);
+		}
+	}
+	instance_destroy();
+}
+
+if wallhit {
 	audio_sound_pitch(sn_pistolbullethit, random_range(0.8, 1.2));
 	audio_play_sound(sn_pistolbullethit, 60, 0);
-	hit = false;
+	wallhit = false;
 }
 
 x += horizspd
