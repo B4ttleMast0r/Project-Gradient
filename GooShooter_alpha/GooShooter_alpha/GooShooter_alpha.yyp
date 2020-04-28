@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1039ade3-a49b-4700-af46-827a95f37b4c",
+            "Value": {
+                "id": "a0d7b3a8-0924-477f-a891-8b456baa3c66",
+                "resourcePath": "objects\\oWaterbombHitbox\\oWaterbombHitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1272fdc6-81c1-4116-a545-0f571ac95e8a",
             "Value": {
                 "id": "305f5b07-4831-4fb4-9563-2e9dd386a276",
@@ -388,6 +396,14 @@
                 "id": "292274c5-768a-4c40-a173-76f518815893",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b18e6f9-801f-4c2f-b5d5-8b0db3ab426a",
+            "Value": {
+                "id": "7e7e75f2-a6b2-4c3d-9b3e-e321ab5153f6",
+                "resourcePath": "sprites\\sWaterbombHitbox\\sWaterbombHitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
