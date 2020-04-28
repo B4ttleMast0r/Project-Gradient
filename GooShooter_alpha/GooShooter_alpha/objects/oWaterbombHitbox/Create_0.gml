@@ -7,6 +7,10 @@ knockbackspeed = baseknockbackspeed;
 /*knockbackspeed = 16;*/
 knockbackangle = 0;
 
-eightdir = true;
-sixteendir = false;
-if eightdir && sixteendir {eightdir = false}
+eightdirplyr = true;
+sixteendirplyr = false;
+if eightdirplyr && sixteendirplyr {eightdirplyr = false}
+
+eightdirdummy = true;
+sixteendirdummy = false;
+if eightdirdummy && sixteendirdummy {eightdirdummy = false}
