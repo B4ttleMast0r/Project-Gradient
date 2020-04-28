@@ -2,7 +2,16 @@
 
 image_xscale = bombrange / 88
 image_yscale = bombrange / 88
+
+knockbackangle = point_direction(x, y, oPlayer.x, oPlayer.y);
 if place_meeting(x,y,oPlayer) {
+	oPlayer.hitbybomb = true;
+	oPlayer.horizspd += lengthdir_x(knockbackspeed, knockbackangle);
+	oPlayer.vertspd += lengthdir_y(knockbackspeed, knockbackangle);
+}
+
+
+/*if place_meeting(x,y,oPlayer) {
 	with(oPlayer){
 		hitbybomb = true;
 		var a = sqrt((sqr(oWaterbombHitbox.knockbackspeed))/2);
@@ -28,5 +37,7 @@ if place_meeting(x,y,oPlayer) {
 			vertspd= -a;
 		}
 	}
-}
+}*/
+
+
 instance_destroy();
