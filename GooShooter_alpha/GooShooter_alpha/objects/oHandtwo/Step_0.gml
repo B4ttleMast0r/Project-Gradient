@@ -34,6 +34,6 @@ if throwarmanimationtime >= 0 {
 	image_yscale = 1;
 }
 
-image_index = global.imagenumb;
+image_index = oPlayer.image_index;
 x = oPlayer.x  + directionoffset;
 y = oPlayer.y - 8 + idleoffset;
