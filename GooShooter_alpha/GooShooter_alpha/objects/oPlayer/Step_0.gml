@@ -32,7 +32,7 @@ if onground {
 	afkdecel = 0.2;
 	hspdcap = 3.6;
 	vspdcap = 13;
-	hspdcapdecelfactor = 0.96;
+	hspdcapdecelfactor = 0.90;
 	vspdcapdecelfactor = 0.60;
 }
 
@@ -95,9 +95,15 @@ vertspd += gravity_custom;
 //decelerate if above speed cap
 if abs(horizspd) > hspdcap {
 	horizspd = horizspd * hspdcapdecelfactor;
+	if abs(horizspd) < hspdcap {
+		horizspd = hspdcap * sign(horizspd);
+	}
 }
 if abs(vertspd) > vspdcap {
 	vertspd = vertspd * vspdcapdecelfactor;
+	if abs(horizspd) < hspdcap {
+		horizspd = hspdcap * sign(horizspd);
+	}
 }
 
 //horizontal collision
