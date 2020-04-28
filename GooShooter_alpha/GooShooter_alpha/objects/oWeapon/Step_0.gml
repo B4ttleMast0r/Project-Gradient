@@ -110,7 +110,7 @@ if !recoil < 1 {
 	recoil = 0
 }
 
-image_index = global.imagenumb;
+image_index = oPlayer.image_index;
 if point_direction(x, y, mouse_x, mouse_y) < 90 || point_direction(x, y, mouse_x, mouse_y) > 270 {
 	directionoffset = -2 * oPlayer.image_xscale
 }else{
