@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "8a3ca710-39dd-4cd0-86f1-3e286f1a5076",
+            "Value": {
+                "id": "ccb7032d-87aa-47d8-a362-0c5147260139",
+                "resourcePath": "sounds\\sn_DummyhitScream\\sn_DummyhitScream.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8ad03cc9-bdd5-47f2-9586-0650cfa6ef26",
             "Value": {
                 "id": "292274c5-768a-4c40-a173-76f518815893",

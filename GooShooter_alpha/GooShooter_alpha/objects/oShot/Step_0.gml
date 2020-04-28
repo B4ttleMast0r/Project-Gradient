@@ -32,6 +32,7 @@ if place_meeting(x, y + vertspd, oWall) {
 
 //enemy collision
 if place_meeting(x, y, oDummy) {
+	audio_play_sound(sn_DummyhitScream, 70, 0);
 	with (oDummy) {
 		horizspd = oShot.horizspd;
 		vertspd = (oShot.vertspd - 4) * 0.75;
