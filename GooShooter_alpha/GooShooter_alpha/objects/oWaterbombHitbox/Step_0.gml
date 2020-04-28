@@ -5,6 +5,43 @@ image_yscale = bombrange / 88
 
 knockbackangle = point_direction(x, y, oPlayer.x, oPlayer.y);
 //ver 4
+if eightdir {
+	//right (6)
+	if knockbackangle > 337.5 || knockbackangle < 22.5 {
+		knockbackangle = 0;
+	}
+	//right-up (9)
+	if knockbackangle > 22.5 && knockbackangle < 67.5 {
+		knockbackangle = 45;
+	}
+	//up (8)
+	if knockbackangle > 67.5 && knockbackangle < 112.5 {
+		knockbackangle = 90;
+	}
+	//up-left (7)
+	if knockbackangle > 112.5 && knockbackangle < 157.5 {
+		knockbackangle = 135;
+	}
+	//left (4)
+	if knockbackangle > 157.5 && knockbackangle < 202.5 {
+		knockbackangle = 180;
+	}
+	//left-down (1)
+	if knockbackangle > 202.5 && knockbackangle < 247.5 {
+		knockbackangle = 225;
+	}
+	//down( 2)
+	if knockbackangle > 247.5 && knockbackangle < 292.5 {
+		knockbackangle = 270;
+	}
+	//down-right (3)
+	if knockbackangle > 292.5 && knockbackangle < 337.5 {
+		knockbackangle = 315;
+	}
+}
+if sixteendir {
+	
+}
 if point_distance(x,y,oPlayer.x,oPlayer.y) <= (bombrange / 2) {
 	knockbackspeed = baseknockbackspeed;
 }
