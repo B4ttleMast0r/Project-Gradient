@@ -33,7 +33,7 @@ hitbybomb = false; //if the player was hit by a bomb during the current jump
 
 bombposition[0] = 0;
 bombposition[1] = 0;
-bombrange = 88;
+
 
 /*acc = 0.5;
 dcc = 0.2;

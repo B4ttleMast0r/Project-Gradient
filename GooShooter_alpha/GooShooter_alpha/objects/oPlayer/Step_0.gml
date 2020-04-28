@@ -24,16 +24,16 @@ if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
 	hspdcap = 3.5;
-	vspdcap = 14;
+	vspdcap = 13;
 	hspdcapdecelfactor = 0.88;
-	vspdcapdecelfactor = 0.70;
+	vspdcapdecelfactor = 0.60;
 }else{ //airborne
 	plyrinputaccel = 0.6;
 	afkdecel = 0.2;
 	hspdcap = 4.0;
-	vspdcap = 14;
-	hspdcapdecelfactor = 0.90;
-	vspdcapdecelfactor = 0.70;
+	vspdcap = 13;
+	hspdcapdecelfactor = 0.86;
+	vspdcapdecelfactor = 0.60;
 }
 
 //accelerate based on player input

@@ -4,8 +4,6 @@
 oPlayer.bombposition[0] = x;
 oPlayer.bombposition[1] = y;
 
-//initiate knockback speed
-knockbackspeed = 10;
 
 //gravity
 vertspd += oPlayer.gravity_custom;
@@ -30,39 +28,17 @@ if place_meeting(x, y + vertspd, oWall) {
 	if onepixel == 1 {walldirection = 3} else {walldirection = 1;}
 }
 if hit {
-	if point_distance(oPlayer.x,oPlayer.y,x,y) < localbombrange {
-		with(oPlayer){
-			hitbybomb = true;
-			var a = sqrt((sqr(oWaterbomb.knockbackspeed))/2);
-			var angle = point_direction(x,y,oWaterbomb.x,oWaterbomb.y);
-			if angle < 22.5 || angle > 337.5 {horizspd = -oWaterbomb.knockbackspeed;}
-			if angle < 202.5 && angle > 157.5 {horizspd = oWaterbomb.knockbackspeed;}
-			if angle < 112.5 && angle > 67.5 {vertspd = oWaterbomb.knockbackspeed;}
-			if angle < 292.5 && angle > 247.5 {vertspd = -oWaterbomb.knockbackspeed;}
-			if angle < 67.5 && angle > 22.5 { 
-				horizspd = -a;
-				vertspd = a;
-			}
-			if angle < 157.5 && angle > 112.5 { 
-				horizspd = a;
-				vertspd = a;
-			}
-			if angle < 247.5 && angle > 202.5 { 
-				horizspd = a;
-				vertspd = -a;
-			}
-			if angle < 337.5 && angle > 292.5 { 
-				horizspd = -a;
-				vertspd= -a;
-			}
-		}
-	}
-	repeat(32) {
+	instance_create_layer(x, y, "Instances", oWaterbombHitbox)
+	
+	repeat(36) {
 		instance_create_layer(x, y, "Instances", oWaterparticle);
 	}
 	with (instance_create_layer(x, y, "Instances", oWaterbombExplosion)) {
 		image_angle = oWaterbomb.walldirection * 90 + 90;
 	}
+	//update bombposition
+	oPlayer.bombposition[0] = x;
+	oPlayer.bombposition[1] = y;
 	instance_destroy();
 }
 
