@@ -105,6 +105,10 @@ if abs(vertspd) > vspdcap {
 		horizspd = hspdcap * sign(horizspd);
 	}
 }
+if abs(horizspd) > room_width {
+	horizspd = room_width * sign(horizspd);
+	//speedrunners will find another way to glitch the game
+}
 
 //horizontal collision
 if place_meeting(x + horizspd, y, oWall) {
@@ -197,6 +201,7 @@ if y > 450 {
 	y = 336;
 }
 */
+
 /*screen wrap
 if x > room_width + 10 x = -9;
 if x < -10 x = room_width + 9;
