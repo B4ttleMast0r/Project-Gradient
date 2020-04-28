@@ -16,6 +16,10 @@ if place_meeting(x,y,oPlayer) {
 	oPlayer.hitbybomb = true;
 	oPlayer.horizspd = ((oPlayer.horizspd + lengthdir_x(knockbackspeed, knockbackangle))+(lengthdir_x(knockbackspeed, knockbackangle))) / 2;
 	oPlayer.vertspd = ((oPlayer.vertspd + lengthdir_y(knockbackspeed, knockbackangle))+(lengthdir_y(knockbackspeed, knockbackangle))) / 2;
+	repeat (2){
+		oPlayer.horizspd = (oPlayer.horizspd + (lengthdir_x(knockbackspeed, knockbackangle))) / 2;
+		oPlayer.vertspd = (oPlayer.vertspd + (lengthdir_y(knockbackspeed, knockbackangle))) / 2;
+	}
 }
 
 //ver 3
