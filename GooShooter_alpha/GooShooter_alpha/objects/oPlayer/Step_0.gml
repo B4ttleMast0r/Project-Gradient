@@ -23,16 +23,16 @@ shortjumpgrvtyfactor = 2.6; //the higher this is, the lower the minimum jump hei
 if onground {
 	plyrinputaccel = 0.9;
 	afkdecel = 0.5;
-	hspdcap = 3.5;
+	hspdcap = 3.6;
 	vspdcap = 13;
 	hspdcapdecelfactor = 0.88;
 	vspdcapdecelfactor = 0.60;
 }else{ //airborne
 	plyrinputaccel = 0.6;
 	afkdecel = 0.2;
-	hspdcap = 4.0;
+	hspdcap = 3.6;
 	vspdcap = 13;
-	hspdcapdecelfactor = 0.86;
+	hspdcapdecelfactor = 0.96;
 	vspdcapdecelfactor = 0.60;
 }
 

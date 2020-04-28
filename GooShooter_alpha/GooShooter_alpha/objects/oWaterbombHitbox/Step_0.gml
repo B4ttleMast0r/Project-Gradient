@@ -9,7 +9,7 @@ if point_distance(x,y,oPlayer.x,oPlayer.y) <= (bombrange / 2) {
 	knockbackspeed = baseknockbackspeed;
 }
 if point_distance(x,y,oPlayer.x,oPlayer.y) > (bombrange / 2) {
-	knockbackspeed = baseknockbackspeed - ((point_distance(x,y,oPlayer.x,oPlayer.y) - (bombrange / 2)) / (bombrange / 2) * (baseknockbackspeed * 0.3));
+	knockbackspeed = baseknockbackspeed - ((point_distance(x,y,oPlayer.x,oPlayer.y) - (bombrange / 2)) / (bombrange / 2) * (baseknockbackspeed * 0.36));
 }
 if knockbackspeed < 0 {knockbackspeed = 0;}
 if place_meeting(x,y,oPlayer) {
