@@ -1,7 +1,7 @@
 /// @description
 
 //initiate variables
-knockbackspeed = 16;
 bombrange = 88;
-
+knockbackspeed = 12;
+/*knockbackspeed = 16;*/
 knockbackangle = 0;

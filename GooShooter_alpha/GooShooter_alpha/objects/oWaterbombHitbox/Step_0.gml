@@ -6,9 +6,15 @@ image_yscale = bombrange / 88
 knockbackangle = point_direction(x, y, oPlayer.x, oPlayer.y);
 if place_meeting(x,y,oPlayer) {
 	oPlayer.hitbybomb = true;
+	oPlayer.horizspd = ((oPlayer.horizspd + lengthdir_x(knockbackspeed, knockbackangle))+(lengthdir_x(knockbackspeed, knockbackangle))) / 2;
+	oPlayer.vertspd = ((oPlayer.vertspd + lengthdir_y(knockbackspeed, knockbackangle))+(lengthdir_y(knockbackspeed, knockbackangle))) / 2;
+
+}
+/*if place_meeting(x,y,oPlayer) {
+	oPlayer.hitbybomb = true;
 	oPlayer.horizspd += lengthdir_x(knockbackspeed, knockbackangle);
 	oPlayer.vertspd += lengthdir_y(knockbackspeed, knockbackangle);
-}
+}*/
 
 
 /*if place_meeting(x,y,oPlayer) {
