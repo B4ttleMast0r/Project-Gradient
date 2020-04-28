@@ -133,6 +133,7 @@ if place_meeting(x,y,oPlayer) {
 	}
 }*/
 
+oPlayer.uititle1 = "knockbackspeed factor";
 oPlayer.uistring1 = knockbackspeed / baseknockbackspeed;
 
 instance_destroy();

@@ -19,7 +19,7 @@ vertspd = 0;
 plyrinputaccel = 0;
 afkdecel = 0;
 hspdcap = 0;
-vspdcap = 0
+vspdcap = 0;
 hspdcapdecelfactor = 1;
 vspdcapdecelfactor = 1;
 
@@ -54,4 +54,5 @@ bombcooldown = 0;
 soundcooldown = 0;
 
 //draw ui
-uistring1 = "";
+uititle1 = "Debug String";
+uistring1 = "TBD";
