@@ -367,6 +367,22 @@
             }
         },
         {
+            "Key": "71c5c23c-839e-4ea3-bb9c-02cb299a5609",
+            "Value": {
+                "id": "7492546d-b464-4557-b676-38908c6f4659",
+                "resourcePath": "sprites\\sDummyParticle\\sDummyParticle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a133932-1105-4ba1-b2a8-ad57d7c65730",
+            "Value": {
+                "id": "f9b38234-aa20-424f-8072-66e206c2521f",
+                "resourcePath": "objects\\oDummyParticle\\oDummyParticle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7acbed0d-7a36-4287-9186-6cd8f78b5e12",
             "Value": {
                 "id": "42ce31f4-22a9-4ff8-9153-f1f1627c31dc",
