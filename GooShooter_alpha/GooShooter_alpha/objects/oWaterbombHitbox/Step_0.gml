@@ -5,7 +5,7 @@ image_yscale = bombrange / 88
 
 knockbackangle = point_direction(x, y, oPlayer.x, oPlayer.y);
 //ver 4
-if eightdir {
+if eightdirplyr {
 	//right (6)
 	if knockbackangle > 337.5 || knockbackangle < 22.5 {
 		knockbackangle = 0;
@@ -39,7 +39,7 @@ if eightdir {
 		knockbackangle = 315;
 	}
 }
-if sixteendir {
+if sixteendirplyr {
 	//right (6)
 	if knockbackangle > 337.5 || knockbackangle < 22.5 {
 		knockbackangle = 0;
