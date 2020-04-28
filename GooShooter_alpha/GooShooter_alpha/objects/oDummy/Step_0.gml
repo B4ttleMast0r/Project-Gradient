@@ -2,6 +2,8 @@
 // Sie können Ihren Code in diesem Editor schreiben
 vertspd += 0.4;
 
+if place_meeting(x, y + 1, oWall) onground = true; else onground = false;
+
 //horizontal collision
 if place_meeting(x + horizspd, y, oWall) {
 	var onepixel = sign(horizspd);
@@ -21,4 +23,4 @@ if place_meeting(x, y + vertspd, oWall) {
 x += horizspd;
 y += vertspd;
 
-horizspd *= 0.9;
+if onground horizspd *= 0.9; else horizspd *= 0.98;
