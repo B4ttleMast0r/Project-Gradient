@@ -133,5 +133,6 @@ if place_meeting(x,y,oPlayer) {
 	}
 }*/
 
+oPlayer.uistring1 = knockbackspeed / baseknockbackspeed;
 
 instance_destroy();

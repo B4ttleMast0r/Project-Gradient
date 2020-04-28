@@ -52,3 +52,6 @@ bombcooldown = 0;
 
 //sound
 soundcooldown = 0;
+
+//draw ui
+uistring1 = "";
