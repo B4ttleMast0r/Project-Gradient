@@ -2,6 +2,7 @@
 
 //initiate variables
 bombrange = 88;
-knockbackspeed = 12;
+baseknockbackspeed = 12;
+knockbackspeed = baseknockbackspeed;
 /*knockbackspeed = 16;*/
 knockbackangle = 0;

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description 
 
-/*draw_set_color(c_white);
-draw_text(50, 50, string(oWaterbombHitbox.image_xscale));*/
+draw_set_color(c_white);
+draw_text(50, 50, string(knockbackspeed / baseknockbackspeed));
