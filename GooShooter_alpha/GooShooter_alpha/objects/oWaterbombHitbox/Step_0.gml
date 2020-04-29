@@ -41,36 +41,68 @@ if eightdirplyr {
 }
 if sixteendirplyr {
 	//right (6)
-	if knockbackangle > 337.5 || knockbackangle < 22.5 {
+	if knockbackangle > 348.75 || knockbackangle < 11.25 {
 		knockbackangle = 0;
 	}
+	//right-right-up (6-9)
+	if knockbackangle > 11.25 && knockbackangle < 33.75 {
+		knockbackangle = 22.5;
+	}
 	//right-up (9)
-	if knockbackangle > 22.5 && knockbackangle < 67.5 {
+	if knockbackangle > 33.75 && knockbackangle < 56.25 {
 		knockbackangle = 45;
 	}
+	//right-up-up (9-8)
+	if knockbackangle > 56.25 && knockbackangle < 78.75 {
+		knockbackangle = 67.5;
+	}
 	//up (8)
-	if knockbackangle > 67.5 && knockbackangle < 112.5 {
+	if knockbackangle > 78.75 && knockbackangle < 101.25 {
 		knockbackangle = 90;
 	}
+	//up-left-left (8-7)
+	if knockbackangle > 101.25 && knockbackangle < 123.75 {
+		knockbackangle = 112.5;
+	}
 	//up-left (7)
-	if knockbackangle > 112.5 && knockbackangle < 157.5 {
+	if knockbackangle > 123.75 && knockbackangle < 146.25 {
 		knockbackangle = 135;
 	}
+	//up-left-left (7-4)
+	if knockbackangle > 146.25 && knockbackangle < 168.75 {
+		knockbackangle = 157.5;
+	}
 	//left (4)
-	if knockbackangle > 157.5 && knockbackangle < 202.5 {
+	if knockbackangle > 168.75 && knockbackangle < 191.25 {
 		knockbackangle = 180;
 	}
+	//left-left-down (4-1)
+	if knockbackangle > 191.25 && knockbackangle < 213.75 {
+		knockbackangle = 202.5;
+	}
 	//left-down (1)
-	if knockbackangle > 202.5 && knockbackangle < 247.5 {
+	if knockbackangle > 213.75 && knockbackangle < 236.25 {
 		knockbackangle = 225;
 	}
-	//down( 2)
-	if knockbackangle > 247.5 && knockbackangle < 292.5 {
+	//left-down-down (1-2)
+	if knockbackangle > 236.25 && knockbackangle < 258.75 {
+		knockbackangle = 247.5;
+	}
+	//down (2)
+	if knockbackangle > 258.75 && knockbackangle < 281.25 {
 		knockbackangle = 270;
 	}
+	//down-down-right (2-3)
+	if knockbackangle > 281.25 && knockbackangle < 303.75 {
+		knockbackangle = 292.5;
+	}
 	//down-right (3)
-	if knockbackangle > 292.5 && knockbackangle < 337.5 {
+	if knockbackangle > 303.75 && knockbackangle < 326.25 {
 		knockbackangle = 315;
+	}
+	//down-right (3)
+	if knockbackangle > 326.25 && knockbackangle < 348.75 {
+		knockbackangle = 337.5;
 	}
 }
 if point_distance(x,y,oPlayer.x,oPlayer.y) <= (bombrange / 2) {
@@ -133,7 +165,7 @@ if place_meeting(x,y,oPlayer) {
 	}
 }*/
 
-oPlayer.uititle1 = "knockbackspeed factor";
-oPlayer.uistring1 = knockbackspeed / baseknockbackspeed;
+oDebugUI.uititle1 = "knockbackspeed factor";
+oDebugUI.uistring1 = knockbackspeed / baseknockbackspeed;
 
 instance_destroy();

@@ -29,7 +29,7 @@ if onground {
 	vspdcapdecelfactor = 0.60;
 }else{ //airborne
 	plyrinputaccel = 0.6;
-	afkdecel = 0.08;
+	afkdecel = 0.16;
 	hspdcap = 3.6;
 	vspdcap = 13;
 	hspdcapdecelfactor = 0.90;
@@ -211,3 +211,4 @@ if x < -10 x = room_width + 9;
 /*draw_set_color(c_white);
 draw_text(50, 50, "hello");
 global.imagenumb = image_index;*/
+
