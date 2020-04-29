@@ -6,3 +6,4 @@ draw_sprite(sprite_1, 0, x, y);
 
 shader_reset();
 
+ //
