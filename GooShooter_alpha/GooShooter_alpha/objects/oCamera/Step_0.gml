@@ -9,3 +9,6 @@ gotox = int64(sectionx) * camerawidth;
 y += (gotoy - y) / 4;
 x += (gotox - x) / 4;
 camera_set_view_pos(cam, x, y);
+
+oDebugUI.camx = x;
+oDebugUI.camy = y;

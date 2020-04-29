@@ -29,7 +29,7 @@ if onground {
 	vspdcapdecelfactor = 0.60;
 }else{ //airborne
 	plyrinputaccel = 0.6;
-	afkdecel = 0.08;
+	afkdecel = 0.16;
 	hspdcap = 3.6;
 	vspdcap = 13;
 	hspdcapdecelfactor = 0.90;
