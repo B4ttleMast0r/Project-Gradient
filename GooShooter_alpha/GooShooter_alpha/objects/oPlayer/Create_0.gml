@@ -53,6 +53,4 @@ bombcooldown = 0;
 //sound
 soundcooldown = 0;
 
-//draw ui
-uititle1 = "Debug String";
-uistring1 = "TBD";
+instance_create_layer(0,0,"Instances",oDebugUI);
