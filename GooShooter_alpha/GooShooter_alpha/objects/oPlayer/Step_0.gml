@@ -211,3 +211,4 @@ if x < -10 x = room_width + 9;
 /*draw_set_color(c_white);
 draw_text(50, 50, "hello");
 global.imagenumb = image_index;*/
+
