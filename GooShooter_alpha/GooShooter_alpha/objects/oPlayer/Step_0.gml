@@ -212,6 +212,3 @@ if x < -10 x = room_width + 9;
 draw_text(50, 50, "hello");
 global.imagenumb = image_index;*/
 
-if vsp < 1 {
-	vsp += 0;
-}
