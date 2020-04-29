@@ -7,8 +7,8 @@ knockbackspeed = baseknockbackspeed;
 /*knockbackspeed = 16;*/
 knockbackangle = 0;
 
-eightdirplyr = true;
-sixteendirplyr = false;
+eightdirplyr = false;
+sixteendirplyr = true;
 if eightdirplyr && sixteendirplyr {eightdirplyr = false}
 
 eightdirdummy = true;
