@@ -34,30 +34,19 @@ hitbybomb = false; //if the player was hit by a bomb during the current jump
 bombposition[0] = 0;
 bombposition[1] = 0;
 
-
 /*acc = 0.5;
 dcc = 0.2;
 stp = 3;
 divnumb = 0.9;*/
 
-
 //animation
 airbornetimer = 0;
 globalanimationreset = 0;
 
-
 //bomb
 bombcooldown = 0;
-
 
 //sound
 soundcooldown = 0;
 
-<<<<<<< HEAD
-//draw ui
-uititle1 = "Debug String";
-uistring1 = "TBD";
-
-=======
 instance_create_layer(0,0,"Instances",oDebugUI);
->>>>>>> 64d32ac500020c2755fb105e8e768ffb69bcef78

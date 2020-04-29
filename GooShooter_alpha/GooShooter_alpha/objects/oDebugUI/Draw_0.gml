@@ -13,3 +13,9 @@ if uienabled2{
 	draw_set_color(c_red);
 	draw_text(36+camx, 60+camy, string(uistring2));
 }
+if uienabled3{
+	draw_set_color(c_orange);
+	draw_text(36+camx, 78+camy, string(uititle3));
+	draw_set_color(c_red);
+	draw_text(36+camx, 96+camy, string(uistring3));
+}
