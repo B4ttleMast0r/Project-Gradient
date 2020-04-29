@@ -1,5 +1,10 @@
 /// @description 
 
+//camera position
+camx = 0;
+camy = 0;
+
+//on/off
 debuguienabled = true
 
 //initiate debug UI
