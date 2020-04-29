@@ -1,6 +1,9 @@
 /// @description
 
 //draw debug UI
+if uienabled1 || uienabled2 || uienabled3 {
+	draw_set_font(fText);
+}
 if uienabled1{
 	draw_set_color(c_orange);
 	draw_text(36+camx, 6+camy, string(uititle1));
