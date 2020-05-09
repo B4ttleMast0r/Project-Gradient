@@ -2,7 +2,7 @@
     "id": "5a33cf3e-a5eb-4f35-ae36-6485395c9ec1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDummy",
+    "name": "oDummyThicc",
     "eventList": [
         {
             "id": "43cf345b-d313-448e-9eb0-a9de7475b11b",
