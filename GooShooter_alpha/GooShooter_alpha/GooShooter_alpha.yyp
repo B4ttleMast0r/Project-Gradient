@@ -247,6 +247,22 @@
             }
         },
         {
+            "Key": "4bceb2c4-affa-44b9-ab31-41e96f5c8086",
+            "Value": {
+                "id": "3bd9018e-0426-45e8-bb75-511e16fde7e5",
+                "resourcePath": "sprites\\sDummyTextbox\\sDummyTextbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e329764-cb2d-4c14-be99-8c3a22d3e8ad",
+            "Value": {
+                "id": "b90625c8-8613-44e6-9b5c-5b63010d9be9",
+                "resourcePath": "fonts\\fTextboxtext\\fTextboxtext.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "5028bcba-d81d-455f-9a2d-f1977aa1da36",
             "Value": {
                 "id": "67f06134-b39d-43a1-8391-a855105b424e",
@@ -580,6 +596,14 @@
                 "id": "23f3e7c9-bedc-4f67-8140-4ce8e3b80fbe",
                 "resourcePath": "views\\c8e3f04a-5de2-4d8f-a129-c087e145d5ca.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cc319773-a10e-4d17-8dad-5dd94ab53dfd",
+            "Value": {
+                "id": "2e688b9a-e3e5-4bc2-9618-29b2e28f6721",
+                "resourcePath": "objects\\oDummyTextbox\\oDummyTextbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
