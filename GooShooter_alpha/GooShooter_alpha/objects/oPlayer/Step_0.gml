@@ -72,7 +72,7 @@ if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == f
 		if onground == false {
 			latejumpused = true
 		}
-		vertspd = -8.4;
+		vertspd = -7.6;
 		duringjump = true;
 		apexreached = false;
 }
