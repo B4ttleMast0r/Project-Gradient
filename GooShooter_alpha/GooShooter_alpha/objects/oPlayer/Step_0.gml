@@ -18,7 +18,7 @@ if onground {
 }
 
 //initiate movement physics stats
-gravity_custom = 0.4;
+gravity_custom = 0.38;
 shortjumpgrvtyfactor = 2.6; //the higher this is, the lower the minimum jump height is
 if onground {
 	plyrinputaccel = 0.9;
@@ -72,7 +72,7 @@ if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == f
 		if onground == false {
 			latejumpused = true
 		}
-		vertspd = -8;
+		vertspd = -8.4;
 		duringjump = true;
 		apexreached = false;
 }
