@@ -20,8 +20,13 @@ uienabled3 = true;
 uititle3 = "Debug String 3";
 uistring3 = "TBD";
 
+uienabled4 = false;
+uititle4 = "Debug String 4";
+uistring4 = "TBD";
+
 if !debuguienabled {
 	uienabled1 = false;
 	uienabled2 = false;
 	uienabled3 = false;
+	uienabled4 = false;
 }

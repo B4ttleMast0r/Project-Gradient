@@ -5,20 +5,28 @@ if uienabled1 || uienabled2 || uienabled3 {
 	draw_set_font(fText);
 }
 if uienabled1{
+	draw_set_font(fText);
 	draw_set_color(c_orange);
 	draw_text(36+camx, 6+camy, string(uititle1));
 	draw_set_color(c_red);
 	draw_text(36+camx, 24+camy, string(uistring1));
 }
 if uienabled2{
+	draw_set_font(fText);
 	draw_set_color(c_orange);
 	draw_text(36+camx, 42+camy, string(uititle2));
 	draw_set_color(c_red);
 	draw_text(36+camx, 60+camy, string(uistring2));
 }
 if uienabled3{
+	draw_set_font(fText);
 	draw_set_color(c_orange);
 	draw_text(36+camx, 78+camy, string(uititle3));
 	draw_set_color(c_red);
 	draw_text(36+camx, 96+camy, string(uistring3));
+}
+if uienabled4{
+	draw_set_font(fTextGross);
+	draw_set_color(c_black);
+	draw_text(150+camx, 140+camy, string(uistring3));
 }

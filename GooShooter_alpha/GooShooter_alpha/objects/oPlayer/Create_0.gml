@@ -39,6 +39,9 @@ dcc = 0.2;
 stp = 3;
 divnumb = 0.9;*/
 
+//death status
+plyrdead = false;
+
 //animation
 airbornetimer = 0;
 globalanimationreset = 0;
@@ -49,6 +52,10 @@ bombcooldown = 0;
 //sound
 soundcooldown = 0;
 
+//turret death  timer
+turretdeathtimer = 3;
 
+//death song
+deathsongcounter = 0;
 
 instance_create_layer(0,0,"Instances",oDebugUI);

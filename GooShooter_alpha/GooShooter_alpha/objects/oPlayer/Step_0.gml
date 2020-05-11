@@ -37,7 +37,9 @@ if onground {
 }
 
 //accelerate based on player input
-horizspd += plyrinputaccel * input_move;
+if !plyrdead{
+	horizspd += plyrinputaccel * input_move;
+}
 
 //decelerate if no button is pressed
 if horizspd > 0 {
@@ -66,8 +68,10 @@ if input_jump {
 if onground {
 	latejumpused = false;
 }
+
+
 //ground jump
-if jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == false)) {
+if (jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == false))) && !plyrdead {
 		jumprequesttimer = 0;
 		if onground == false {
 			latejumpused = true
@@ -132,7 +136,7 @@ if place_meeting(x + horizspd, y + vertspd, oWall) {
 
 //bomb
 bombcooldown --;
-if input_bomb && bombcooldown <= 0 {
+if (input_bomb && bombcooldown <= 0) && !plyrdead{
 	bombcooldown = 45;
 	with(instance_create_layer(x, y, "instances", oWaterbomb)){
 		image_speed = 0;
@@ -181,6 +185,30 @@ if input_move != 0 image_xscale = input_move;
 
 //sound
 soundcooldown--;
+
+//death
+if turretdeathtimer <= 0 {
+	plyrdead = true;
+}
+if place_meeting(x,y,oSpike) {
+	plyrdead = true;
+}
+oDebugUI.uititle3 = "death status";
+if plyrdead{
+	oDebugUI.uistring3 = "YOU ARE DEAD";
+	if !(audio_is_playing(sn_ichglaubesfucktihnab_cut_2) || audio_is_playing(sn_ichglaubesfucktihnab_long)){
+		if deathsongcounter = 0{
+			audio_play_sound(sn_ichglaubesfucktihnab_cut_2, 60, 0);
+		}else{
+			audio_play_sound(sn_ichglaubesfucktihnab_long, 60, 0);
+		}
+		deathsongcounter ++;
+	}
+	oDebugUI.uienabled4 = true;
+	oDebugUI.uistring4 = "YOU ARE DEAD";
+}else{
+	oDebugUI.uistring3 = "You're gonna die";
+}
 
 /*if (onground){
 	if (soundcooldown < 1) {

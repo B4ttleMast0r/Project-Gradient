@@ -60,7 +60,7 @@ if oPlayer.sprite_index = sPlayerRunning && recoil < 1 {
 
 	
 
-if mouse_check_button_pressed(mb_left){
+if mouse_check_button_pressed(mb_left) && !oPlayer.plyrdead{
 	audio_sound_pitch(sn_pistolshot1, random_range(0.8, 1.2));
 	audio_sound_pitch(sn_pistolshot2, random_range(0.8, 1.2));
 	audio_play_sound(choose(sn_pistolshot1, sn_pistolshot2), 60, 0);

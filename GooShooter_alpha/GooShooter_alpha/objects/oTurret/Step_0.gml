@@ -9,10 +9,11 @@ if point_distance(oPlayer.x,oPlayer.y,x,y) <= rangebig && point_distance(oPlayer
 		/* audio_sound_pitch(sn_concious, random_range(0.8, 1.2));
 		audio_play_sound(sn_concious, 60, 0); */
 		audio_stop_sound(sn_katanazero_thesandman2);
-		if (audio_is_playing(sn_katanazero_nocturnedistorted) = false) {
+		if (audio_is_playing(sn_katanazero_nocturnedistorted) = false) && !oPlayer.plyrdead {
 			audio_play_sound(sn_katanazero_nocturnedistorted, 60, 0);
 		}
-		}
+		oPlayer.turretdeathtimer = 3;
+	}
 }
 if point_distance(oPlayer.x,oPlayer.y,x,y) <= rangesmall {
 	var angle = point_direction(x,y,oPlayer.x,oPlayer.y)
@@ -21,12 +22,21 @@ if point_distance(oPlayer.x,oPlayer.y,x,y) <= rangesmall {
 		/* audio_sound_pitch(sn_alarm, random_range(0.8, 1.2));
 		audio_play_sound(sn_alarm, 60, 0);*/
 		audio_stop_sound(sn_katanazero_nocturnedistorted);
-		if (audio_is_playing(sn_katanazero_thesandman2) = false) {
+		if (audio_is_playing(sn_katanazero_thesandman2) = false) && !oPlayer.plyrdead {
 			audio_play_sound(sn_katanazero_thesandman2, 60, 0);
 		}
-		}
+		oPlayer.turretdeathtimer = oPlayer.turretdeathtimer - (1/60);
+	}
 }
 if plyrinrange = false{
 	audio_stop_sound(sn_katanazero_thesandman2);
 	audio_stop_sound(sn_katanazero_nocturnedistorted);
+	oPlayer.turretdeathtimer = 3;
 }
+if oPlayer.plyrdead{
+	audio_stop_sound(sn_katanazero_thesandman2);
+	audio_stop_sound(sn_katanazero_nocturnedistorted);
+}
+
+oDebugUI.uititle2 = "turret death timer"
+oDebugUI.uistring2 = oPlayer.turretdeathtimer;
