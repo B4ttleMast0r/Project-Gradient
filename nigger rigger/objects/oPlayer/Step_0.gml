@@ -8,11 +8,12 @@ input_move = input_right - input_left;
 
 
 //onground
-onground = place_meeting(x, y + 1, oWall);
+//onground = place_meeting(x, y + 1, oWall);
 
-input_move = horizspd * input_move
+horizspd = 2 * input_move
 
-//horizontal collision
+//horizontal 
+/*
 if place_meeting(x + horizspd, y, oWall) {
 	var onepixel = sign(horizspd);
 	while(!place_meeting(x + onepixel, y, oWall)) x += onepixel;
@@ -34,7 +35,7 @@ if place_meeting(x + horizspd, y + vertspd, oWall) {
 	horizspd = 0;
 }
 
-
+*/
 //apply speed
 x += horizspd;
 y += vertspd;

@@ -10,6 +10,6 @@ input_jump = false;
 
 onground = false;
 
-horizspd = 2;
-vertspd = 2;
+horizspd = 0;
+vertspd = 0;
 gravity_custom = 2;
