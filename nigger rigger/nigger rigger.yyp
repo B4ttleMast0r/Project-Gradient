@@ -303,11 +303,27 @@
             }
         },
         {
+            "Key": "eea247c2-512b-44bf-9330-6c0c7a30d1ec",
+            "Value": {
+                "id": "3f73cc1e-6886-43f9-8c0d-d0d633338457",
+                "resourcePath": "sprites\\sArcadeMachineWall\\sArcadeMachineWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f1f793db-be8d-49b5-a1a1-49ab05768f88",
             "Value": {
                 "id": "84b7ed9a-57a0-46bf-8902-4bca9cdbfd89",
                 "resourcePath": "sprites\\sEnemyRunning\\sEnemyRunning.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f2763f16-4e82-4edb-8e70-f6d954a55590",
+            "Value": {
+                "id": "598dcf1c-dcfe-4bb3-ab0f-36438f38e605",
+                "resourcePath": "objects\\oArcadeMachineWall\\oArcadeMachineWall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
