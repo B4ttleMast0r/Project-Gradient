@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "0ab93864-c2c4-41b1-a18a-d1840ce675bc",
-            "Value": {
-                "id": "9ee50e76-d9f7-41ee-9ea0-ab4c62e22fa2",
-                "resourcePath": "sprites\\sprite6\\sprite6.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0ce10f55-476a-4ded-a450-ff919da303a5",
             "Value": {
                 "id": "864b8b27-75d6-44ad-8a7e-b7a710b7b28d",
@@ -140,6 +132,14 @@
                 "id": "f92f7ec4-39a0-4dbd-ab3f-3153b8f832e5",
                 "resourcePath": "views\\7cd81439-6269-46ff-a63f-04e7520056bb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9fea14c8-83a1-4607-a379-ce84832c58e4",
+            "Value": {
+                "id": "9fa47740-796d-4028-8ddc-0d551f9b7a00",
+                "resourcePath": "sprites\\sPlayerJumping\\sPlayerJumping.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
