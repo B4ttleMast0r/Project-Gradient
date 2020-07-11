@@ -109,7 +109,7 @@ if place_meeting(x + horizspd, y + vertspd, oWall) {
 x += horizspd;
 y += vertspd;
 
-
+/*
 //animation
 if onground {
 	if input_move == 0 {
@@ -133,7 +133,7 @@ if onground {
 }
 //flip sprite
 if input_move != 0 image_xscale = input_move;
-
+*/
 //sound
 soundcooldown--;
 
