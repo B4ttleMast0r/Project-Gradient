@@ -49,6 +49,8 @@ if !onground {
 	}
 }
 if death {
+	audio_sound_pitch(sn_footstep, random_range(0.8, 1.2));
+			audio_play_sound(sn_footstep, 60, 0);
 	room_restart();
 	x = startx
 	y = starty
@@ -65,9 +67,9 @@ if bbutton {
 x += hsp;
 y += vsp;
 
-if place_meeting(x,y,oLaufbandLinks){
+if place_meeting(x,y+1,oLaufbandLinks){
 	x += -2;
 }
-if place_meeting(x,y,oLaufbandRechts){
+if place_meeting(x,y+1,oLaufbandRechts){
 	x += 2;
 }
