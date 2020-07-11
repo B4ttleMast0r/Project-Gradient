@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "1ed80db2-9f42-4fea-8995-9da8f93b705b",
+            "Value": {
+                "id": "091d647a-91a4-4aed-9ce6-e4efa5403c4c",
+                "resourcePath": "sprites\\sPlayerJumping\\sPlayerJumping.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "25563ab5-4317-4e6f-a10a-2ff1d41ff3e1",
             "Value": {
                 "id": "cb86e8bc-a28b-4136-b877-f10a84e36c59",
