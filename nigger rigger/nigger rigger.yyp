@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "4d79595e-fdd7-4402-9516-058eb5386ba8",
+            "Value": {
+                "id": "07cec78f-6e4a-4611-9e99-aebaf521680b",
+                "resourcePath": "sprites\\sBullet\\sBullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4ed5dcf1-2608-4d13-b819-aba508645779",
             "Value": {
                 "id": "04b10221-d448-4f29-aba0-372f06dd8556",
@@ -114,7 +122,7 @@
             "Key": "77e0bfd6-13e2-48c9-b9a9-814ab8a1518d",
             "Value": {
                 "id": "29be85fc-6ffc-4a8d-af75-31fbee0e5309",
-                "resourcePath": "sprites\\sEnemyIdle\\sEnemyIdle.yy",
+                "resourcePath": "sprites\\sEnemyShoot\\sEnemyShoot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -132,6 +140,14 @@
                 "id": "f60589e0-4b44-4003-bec9-1eea9989e935",
                 "resourcePath": "views\\a105c61e-dd89-47d2-ad9d-0ed50a71c455.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a5371090-9268-4314-a3ed-9beef8f01617",
+            "Value": {
+                "id": "f00d263b-eae0-4c16-8564-56be57162b05",
+                "resourcePath": "objects\\camera\\camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
