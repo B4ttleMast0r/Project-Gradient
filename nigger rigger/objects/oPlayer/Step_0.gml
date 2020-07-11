@@ -48,26 +48,6 @@ if horizspd < 0 {
 	}
 }
 
-//during jump update
-if onground {
-	duringjump = false;
-}
-//jumpbuffer
-if input_jump {
-	jumprequesttimer = 6;
-}else {
-	jumprequesttimer --;
-}
-if onground {
-	latejumpused = false;
-}
-
-
-if !onground {
-	gravity_custom += 2;
-}else {
-	gravity_custom = 0;
-}
 
 if (onground || jump) && input_jump_held && (jumptime <60){
 	y += 2;
@@ -77,37 +57,15 @@ if (onground || jump) && input_jump_held && (jumptime <60){
 	jump = false;
 	jumptime = 0;
 }
-	
-	
-	
-	
 
-//ground jump
-/*if (jumprequesttimer > 0 && (onground || (airbornetimer <= 4 && latejumpused == false))) && !plyrdead {
-		jumprequesttimer = 0;
-		if onground == false {
-			latejumpused = true
-		}
-		vertspd = -7.6;
-		duringjump = true;
-		apexreached = false;
+if jump {
+	y += 2;
+}else {
+	vertspd += 2;
+	y += vertspd;
 }
-if vertspd >= 0 && onground == false {
-	apexreached= true;
-}
-jumpingupwards = duringjump == true && apexreached == false;
-
-if onground {
-	hitbybomb = false;
-}
-//make the jumpheight greater, the longer you press the button
-if (!input_jump_held && jumpingupwards && !hitbybomb){
-	gravity_custom = gravity_custom * shortjumpgrvtyfactor;
-} 
-*/
-//gravity
-vertspd += gravity_custom;
-
+	
+	
 
 //decelerate if above speed cap
 if abs(horizspd) > hspdcap {
@@ -147,30 +105,10 @@ if place_meeting(x + horizspd, y + vertspd, oWall) {
 	horizspd = 0;
 }
 
-//bomb
-bombcooldown --;
-if (input_bomb && bombcooldown <= 0) && !plyrdead{
-	bombcooldown = 45;
-	with(instance_create_layer(x, y, "instances", oWaterbomb)){
-		image_speed = 0;
-		direction = point_direction(x, y, mouse_x, mouse_y);
-		horizspd = lengthdir_x(12, direction);
-		vertspd = lengthdir_y(12, direction);
-	}
-	oHandtwo.bombthrown = true;
-}
-
 //apply speed
 x += horizspd;
 y += vertspd;
 
-//update onground
-onground = place_meeting(x, y + 1, oWall);
-if onground {
-	airbornetimer = 0;
-	duringjump = false;
-	apexreached = false;
-}
 
 //animation
 if onground {
