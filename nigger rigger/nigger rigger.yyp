@@ -74,7 +74,7 @@
             "Key": "4ed5dcf1-2608-4d13-b819-aba508645779",
             "Value": {
                 "id": "04b10221-d448-4f29-aba0-372f06dd8556",
-                "resourcePath": "objects\\oBullet\\oBullet.yy",
+                "resourcePath": "objects\\oPlayerBullet\\oPlayerBullet.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -92,6 +92,14 @@
                 "id": "3dcbe150-539a-4fae-9a53-681157e58489",
                 "resourcePath": "views\\51d84d09-3d9f-4937-8693-835f09b1389b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5a6ba4e3-d2f6-49d2-ab06-50bb67433a99",
+            "Value": {
+                "id": "c851c80c-7047-481c-a6f9-b3e0ce1b01a9",
+                "resourcePath": "sprites\\sPlayerJumping\\sPlayerJumping.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
