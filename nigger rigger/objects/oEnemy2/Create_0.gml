@@ -9,4 +9,4 @@ jumpforce = -10
 onground = false;
 hsp = 2;
 vsp = 0;
-grv = 1;
+grv = 0.5;

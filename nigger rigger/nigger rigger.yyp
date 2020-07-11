@@ -31,11 +31,11 @@
     },
     "resources": [
         {
-            "Key": "0ab93864-c2c4-41b1-a18a-d1840ce675bc",
+            "Key": "03a3c83f-167f-46e6-9c16-588b73dd593b",
             "Value": {
-                "id": "9ee50e76-d9f7-41ee-9ea0-ab4c62e22fa2",
-                "resourcePath": "sprites\\sprite6\\sprite6.yy",
-                "resourceType": "GMSprite"
+                "id": "981c00d5-1ad1-4c5f-8df8-d0285d2e8d20",
+                "resourcePath": "objects\\oArcadeMachine\\oArcadeMachine.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "9fea14c8-83a1-4607-a379-ce84832c58e4",
+            "Value": {
+                "id": "9fa47740-796d-4028-8ddc-0d551f9b7a00",
+                "resourcePath": "sprites\\sPlayerJumping\\sPlayerJumping.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a105c61e-dd89-47d2-ad9d-0ed50a71c455",
             "Value": {
                 "id": "f60589e0-4b44-4003-bec9-1eea9989e935",
@@ -172,6 +180,14 @@
                 "id": "9fb8a0d7-0ad8-43b1-9a6e-2613a3342e81",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aa06560b-bf3b-4a01-8441-0bec647bf6ee",
+            "Value": {
+                "id": "efc3e39b-68c7-4212-aabc-e2ac446da8a6",
+                "resourcePath": "sprites\\sArcadeMachine\\sArcadeMachine.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
