@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "1583a99d-a090-4b60-a496-790e6fcb6023",
-            "Value": {
-                "id": "ff11c5a5-31d7-4a54-88ec-42aa25440dd5",
-                "resourcePath": "sprites\\sEnemyShot\\sEnemyShot.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "25563ab5-4317-4e6f-a10a-2ff1d41ff3e1",
             "Value": {
                 "id": "cb86e8bc-a28b-4136-b877-f10a84e36c59",
@@ -235,14 +227,6 @@
             "Value": {
                 "id": "c163d34b-c58f-42cf-bb17-85226b65e977",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d800883c-0d79-4042-a2ea-f82b287e375a",
-            "Value": {
-                "id": "7b04e338-fb98-48cf-97fa-07db3ad39958",
-                "resourcePath": "objects\\oEnemyShot\\oEnemyShot.yy",
                 "resourceType": "GMObject"
             }
         },
