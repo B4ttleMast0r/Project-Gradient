@@ -25,7 +25,8 @@
         "ef3630eb-2733-4750-9ad3-b0b76402fe90",
         "f92583f0-a038-440f-8904-b402f41eb56a",
         "35e012a2-5adb-42d1-a068-1c4398f98039",
-        "52da5a6c-4621-45e9-833b-c0c14cb02dfd"
+        "52da5a6c-4621-45e9-833b-c0c14cb02dfd",
+        "dc666f9e-8ea5-4603-9446-665777d0cfed"
     ],
     "IsDnD": false,
     "layers": [
@@ -57,9 +58,35 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "ArcadeMachineWall",
+            "id": "736e0829-a16b-47e2-af85-c0356bd714e6",
+            "depth": 100,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_32ACDDC6","id": "dc666f9e-8ea5-4603-9446-665777d0cfed","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_32ACDDC6","objId": "f2763f16-4e82-4edb-8e70-f6d954a55590","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 0}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "b720114f-62d2-46a8-ba85-09b94536b83a",
-            "depth": 100,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -105,7 +132,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278758117 },
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -137,7 +164,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Tiles_1",
             "id": "e82a9c1a-85e7-46ac-a269-0c614cc89ac7",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
