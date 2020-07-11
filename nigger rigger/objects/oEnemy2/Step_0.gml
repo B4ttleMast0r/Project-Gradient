@@ -24,18 +24,12 @@ if(place_meeting(x , y + vsp, oWall))
 	}
 	vsp = 0;
 }
-if ((sign(oPlayer.x-x)*(oPlayer.x-x)>50 && !(sign(oPlayer.x-x)*(oPlayer.x-x)>200))|| (sign(oPlayer.x-x)*(oPlayer.x-x)<200 && !(sign(oPlayer.x-x)*(oPlayer.x-x)<50))){
-	x += hsp;
-	sprite_index = sEnemyRunning;
-}else {
-	sprite_index = sEnemyShoot;
+if (((oPlayer.x - x) > 50) || ((oPlayer.x - x) < -50)){
+x += hsp;
+y += vsp;
 }
-	
-image_xscale = sign(oPlayer.x - x);
-
-if hsp == 0 && !(oPlayer.x == x){
+if hsp == 0 {
 	vsp = jumpforce;
 }
-y += vsp;
-
+	
 	
