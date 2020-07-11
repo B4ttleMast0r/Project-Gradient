@@ -47,10 +47,10 @@
             }
         },
         {
-            "Key": "1583a99d-a090-4b60-a496-790e6fcb6023",
+            "Key": "1ed80db2-9f42-4fea-8995-9da8f93b705b",
             "Value": {
-                "id": "ff11c5a5-31d7-4a54-88ec-42aa25440dd5",
-                "resourcePath": "sprites\\sEnemyShot\\sEnemyShot.yy",
+                "id": "091d647a-91a4-4aed-9ce6-e4efa5403c4c",
+                "resourcePath": "sprites\\sPlayerJumping\\sPlayerJumping.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -235,14 +235,6 @@
             "Value": {
                 "id": "c163d34b-c58f-42cf-bb17-85226b65e977",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d800883c-0d79-4042-a2ea-f82b287e375a",
-            "Value": {
-                "id": "7b04e338-fb98-48cf-97fa-07db3ad39958",
-                "resourcePath": "objects\\oEnemyShot\\oEnemyShot.yy",
                 "resourceType": "GMObject"
             }
         },
