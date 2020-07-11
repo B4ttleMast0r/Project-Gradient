@@ -24,12 +24,12 @@ if(place_meeting(x , y + vsp, oWall))
 	}
 	vsp = 0;
 }
-if (((oPlayer.x - x) > 50) || ((oPlayer.x - x) < -50)){
+if ((((oPlayer.x - x) > 50) || ((oPlayer.x - x) < -50)) &&(((oPlayer.x - x) < 150) || ((oPlayer.x - x) > -150))){
 x += hsp;
-y += vsp;
 }
+y += vsp;
 if hsp == 0 {
 	vsp = jumpforce;
 }
-	
+y += vsp;
 	
