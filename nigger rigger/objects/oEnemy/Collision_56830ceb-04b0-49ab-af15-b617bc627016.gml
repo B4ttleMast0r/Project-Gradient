@@ -1,2 +1,2 @@
 /// @description Hier Beschreibung einfügen
-// ie könen Ihren Code in diesem Editor schreiben
+// Sie können Ihren Code in diesem Editor schreiben
