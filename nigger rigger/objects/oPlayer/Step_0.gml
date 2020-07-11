@@ -48,11 +48,7 @@ if !onground {
 		image_index = 0;
 	}
 }
-if death {
-	room_restart();
-	x = startx
-	y = starty
-}
+
 
 x += hsp;
 y += vsp;

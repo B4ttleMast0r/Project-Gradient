@@ -10,5 +10,3 @@ onground = false;
 hsp = 2;
 vsp = 0;
 grv = 0.5;
-shoot = false;
-wait = 0;
