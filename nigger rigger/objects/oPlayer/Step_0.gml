@@ -8,7 +8,7 @@ var move = rightbutton - leftbutton;
 hsp = move * movespeed;
 vsp += grv;
 
-
+onground = (place_meeting(x , y + 1, oWall));
 
 /*if (place_meeting(x , y + 1, oWall)) 
 {
@@ -42,33 +42,5 @@ if(place_meeting(x , y + vsp, oWall))
 	vsp = 0;
 }
 
-
-
 x += hsp;
 y += vsp;
-
-onground = (place_meeting(x , y + 1, oWall));
-
-//animations
-
-if hsp == 0
-{
-	sprite_index = sPlayerIdle;
-}
-else 
-{
-	sprite_index = sPlayerRunning;
-	image_xscale = sign(hsp);
-}
-if !onground {
-	sprite_index = sPlayerJumping;
-	if vsp < 0
-	{
-		image_index = 0;
-	}
-	else
-	{
-		image_index = 1;
-	}
-}
-
