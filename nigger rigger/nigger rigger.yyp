@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "4d6bb189-be76-4bb3-979e-4318b09ec081",
+            "Value": {
+                "id": "3aacf58d-cc2c-4897-80ef-123693660a83",
+                "resourcePath": "sprites\\sLaufbandRechts\\sLaufbandRechts.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d79595e-fdd7-4402-9516-058eb5386ba8",
             "Value": {
                 "id": "07cec78f-6e4a-4611-9e99-aebaf521680b",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "75bad8fa-4e5b-4910-9502-a6e4604c31a1",
+            "Value": {
+                "id": "6e0b2a89-3bf3-4b2e-82cb-7ef884c87552",
+                "resourcePath": "objects\\obulletgud\\obulletgud.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "77e0bfd6-13e2-48c9-b9a9-814ab8a1518d",
             "Value": {
                 "id": "29be85fc-6ffc-4a8d-af75-31fbee0e5309",
@@ -148,6 +164,14 @@
                 "id": "f92f7ec4-39a0-4dbd-ab3f-3153b8f832e5",
                 "resourcePath": "views\\7cd81439-6269-46ff-a63f-04e7520056bb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9545c8fa-e035-4dc9-844d-80f258d08c35",
+            "Value": {
+                "id": "362e0a54-1cbc-4f94-af94-f6e4fa5c2a30",
+                "resourcePath": "sprites\\sBulletgud\\sBulletgud.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -199,6 +223,14 @@
             }
         },
         {
+            "Key": "b0f22d31-6429-4c18-934b-08ea1705fbd4",
+            "Value": {
+                "id": "b8055e3f-24e9-4b7b-9dc9-6205c1239145",
+                "resourcePath": "sprites\\sLaufbandLinks\\sLaufbandLinks.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b19724db-c4b2-48df-bcee-e923714fe3a7",
             "Value": {
                 "id": "e5365dea-c5d4-4032-b3d3-add012c9d71d",
@@ -227,6 +259,14 @@
             "Value": {
                 "id": "e2916d6d-dbae-4510-88aa-365607555694",
                 "resourcePath": "objects\\oArcadeBackground\\oArcadeBackground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c6be8b32-f2b1-423a-a57a-61c3dba326ab",
+            "Value": {
+                "id": "9f8bcf51-b80d-48fc-a35c-50e0685d818b",
+                "resourcePath": "objects\\oLaufbandRechts\\oLaufbandRechts.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -283,6 +323,14 @@
             "Value": {
                 "id": "5a189494-4852-4b3a-a97c-ed59b0e477d1",
                 "resourcePath": "objects\\oEnemy\\oEnemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e1d7cb30-cef7-4696-b03c-1c5bcb097016",
+            "Value": {
+                "id": "ef41a6a0-2e29-4a63-bfb1-7b1663f29712",
+                "resourcePath": "objects\\oLaufbandLinks\\oLaufbandLinks.yy",
                 "resourceType": "GMObject"
             }
         },

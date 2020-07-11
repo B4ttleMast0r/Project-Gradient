@@ -53,6 +53,21 @@ if death {
 	x = startx
 	y = starty
 }
+if bbutton {
+		with (instance_create_layer(oPlayer.x,oPlayer.y,"Instances",obulletgud)){
+		spd = oPlayer.image_xscale* 4;
+		image_xscale = oPlayer.image_xscale
+		x += spd;
+	}
+
+}
 
 x += hsp;
 y += vsp;
+
+if place_meeting(x,y,oLaufbandLinks){
+	x += -2;
+}
+if place_meeting(x,y,oLaufbandRechts){
+	x += 2;
+}
