@@ -2,7 +2,7 @@
     "id": "4ed5dcf1-2608-4d13-b819-aba508645779",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPlayerBullet",
+    "name": "oBullet",
     "eventList": [
         {
             "id": "68a132c3-40bd-4d1d-b94c-64b8fa406d31",
@@ -25,7 +25,7 @@
             "m_owner": "4ed5dcf1-2608-4d13-b819-aba508645779"
         }
     ],
-    "maskSpriteId": "4d79595e-fdd7-4402-9516-058eb5386ba8",
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,

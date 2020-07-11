@@ -10,7 +10,15 @@ vsp += grv;
 
 onground = (place_meeting(x , y + 1, oWall));
 
-
+/*if (place_meeting(x , y + 1, oWall)) 
+{
+	onground = true;
+}
+else 
+{
+	onground = false;
+}
+*/
 if abutton && onground
 {
 	vsp = jumpforce;
@@ -34,28 +42,5 @@ if(place_meeting(x , y + vsp, oWall))
 	vsp = 0;
 }
 
-//shooting
-
-//animations
-if hsp == 0
-{
-	sprite_index = sPlayerIdle;
-}
-else
-{
-	sprite_index = sPlayerRunning;
-	image_xscale = sign(hsp);
-}
-if !onground 
-{
-	sprite_index = sPlayerJumping;
-	if vsp > 0 
-	{
-		image_index = 1;
-	}
-	else {
-		image_index = 0;
-	}
-}
 x += hsp;
 y += vsp;
