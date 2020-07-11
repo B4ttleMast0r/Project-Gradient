@@ -10,8 +10,9 @@ vsp += grv;
 onground = (place_meeting(x , y + 1, oWall));
 
 
-if abutton && onground
-{
+if abutton && onground{
+	audio_sound_pitch(sn_jump, random_range(0.8, 1.2));
+			audio_play_sound(sn_jump, 60, 0);
 	vsp = jumpforce;
 }
 
@@ -49,11 +50,15 @@ if !onground {
 	}
 }
 if death {
+	audio_sound_pitch(sn_hit, random_range(0.8, 1.2));
+			audio_play_sound(sn_hit, 60, 0);
 	room_restart();
 	x = startx
 	y = starty
 }
 if bbutton {
+	audio_sound_pitch(sn_shot, random_range(0.8, 1.2));
+			audio_play_sound(sn_shot, 60, 0);
 		with (instance_create_layer(oPlayer.x,oPlayer.y,"Instances",obulletgud)){
 		spd = oPlayer.image_xscale* 4;
 		image_xscale = oPlayer.image_xscale
@@ -65,9 +70,9 @@ if bbutton {
 x += hsp;
 y += vsp;
 
-if place_meeting(x,y,oLaufbandLinks){
+if place_meeting(x,y+1,oLaufbandLinks){
 	x += -2;
 }
-if place_meeting(x,y,oLaufbandRechts){
+if place_meeting(x,y+1,oLaufbandRechts){
 	x += 2;
 }
