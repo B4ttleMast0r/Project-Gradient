@@ -2,7 +2,7 @@ leftbutton = keyboard_check(ord("A"));
 rightbutton = keyboard_check(ord("D"));
 abutton = keyboard_check_pressed(ord("K"));
 bbutton = keyboard_check_pressed(ord("J"));
-
+input_move = rightbutton - leftbutton;
 var move = rightbutton - leftbutton;
 
 hsp = move * movespeed;
@@ -41,6 +41,9 @@ if(place_meeting(x , y + vsp, oWall))
 	}
 	vsp = 0;
 }
+
+//flip sprite
+if input_move != 0 image_xscale = input_move;
 
 x += hsp;
 y += vsp;
