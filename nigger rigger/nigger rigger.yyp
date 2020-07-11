@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "c0ce9067-3455-44b9-8703-1f434f342dbf",
+            "Value": {
+                "id": "885535e1-f609-4d2a-96da-0fc312d1552e",
+                "resourcePath": "sprites\\sMainTiles\\sMainTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6be8b32-f2b1-423a-a57a-61c3dba326ab",
             "Value": {
                 "id": "9f8bcf51-b80d-48fc-a35c-50e0685d818b",
