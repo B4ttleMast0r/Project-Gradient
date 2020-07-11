@@ -6,3 +6,11 @@ if place_meeting(x, y, oEnemy2) {
 		instance_destroy()
 	}
 }
+
+if place_meeting(x, y, oEnemy2) {
+	instance_destroy();
+}
+
+if place_meeting(x, y, oWall) {
+	instance_destroy();
+}

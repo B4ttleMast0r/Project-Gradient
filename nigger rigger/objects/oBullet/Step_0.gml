@@ -5,3 +5,11 @@ x += spd;
 if place_meeting(x, y, oPlayer) {
 	oPlayer.death = true;
 }
+
+if place_meeting(x, y, oPlayer) {
+	instance_destroy();
+}
+
+if place_meeting(x, y, oWall) {
+	instance_destroy();
+}
