@@ -10,15 +10,6 @@ vsp += grv;
 
 
 
-/*if (place_meeting(x , y + 1, oWall)) 
-{
-	onground = true;
-}
-else 
-{
-	onground = false;
-}
-*/
 if abutton && onground
 {
 	vsp = jumpforce;
