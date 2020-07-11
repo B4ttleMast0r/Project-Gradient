@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "2d40dbb5-3df9-4181-8c87-20f7f360fd07",
+            "Value": {
+                "id": "efd26406-a1b5-4039-8bb9-c379002f3a99",
+                "resourcePath": "sprites\\sArcadeBackground\\sArcadeBackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34511e37-1642-40d9-b46e-9c20cc2156d4",
             "Value": {
                 "id": "bb559325-ff5f-4da1-b2c1-123128055c0b",
@@ -212,6 +220,14 @@
                 "id": "8ad41248-1be9-40f2-af86-4eaf61ec5614",
                 "resourcePath": "views\\b282c72c-8e04-4bb8-aac1-13d6febb116e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ba4db2b8-766f-480f-a222-3ffd862ab573",
+            "Value": {
+                "id": "e2916d6d-dbae-4510-88aa-365607555694",
+                "resourcePath": "objects\\oArcadeBackground\\oArcadeBackground.yy",
+                "resourceType": "GMObject"
             }
         },
         {
