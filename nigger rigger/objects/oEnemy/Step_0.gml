@@ -1,7 +1,7 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
-dir = 1;
+dir = sign(oPlayer.x-x)
 
 hsp = 2 * dir
 vsp += grv;
