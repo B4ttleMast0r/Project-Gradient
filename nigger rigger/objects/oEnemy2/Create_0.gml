@@ -7,6 +7,6 @@ dir = 0;
 movespeed = 4;
 jumpforce = -10
 onground = false;
-hsp = 0;
+hsp = 2;
 vsp = 0;
 grv = 1;

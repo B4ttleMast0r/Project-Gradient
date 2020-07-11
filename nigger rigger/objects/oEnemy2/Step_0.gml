@@ -14,7 +14,10 @@ if(place_meeting(x + hsp, y, oWall))
 		x = x + sign(hsp);
 	}
 	hsp = 0;
-}
+	if onground {
+		vsp = jumpforce;
+	}
+}//sdsdihiosrhgisrgihsrgh
 
 if(place_meeting(x , y + vsp, oWall)) 
 {
@@ -23,13 +26,16 @@ if(place_meeting(x , y + vsp, oWall))
 		y = y + sign(vsp);
 	}
 	vsp = 0;
+
 }
-if (((oPlayer.x - x) > 50) || ((oPlayer.x - x) < -50)){
+if ((abs(oPlayer.x-x)>50) && !(abs(oPlayer.x-x)>200)){
+	sprite_index = sEnemyRunning;
+}else {
+	sprite_index = sEnemyShoot;
+	hsp = 0;
+}
+
+image_xscale = sign(oPlayer.x - x);
+
 x += hsp;
 y += vsp;
-}
-if hsp == 0 {
-	vsp = jumpforce;
-}
-	
-	
