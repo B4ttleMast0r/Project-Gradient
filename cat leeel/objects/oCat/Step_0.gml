@@ -92,7 +92,7 @@ if button == 3 {
 			audio_play_sound(sn_slap, 60, 0);
 			counter +=1;
 		}
-	}
+	} 
 }
 
 if button == 4 {
