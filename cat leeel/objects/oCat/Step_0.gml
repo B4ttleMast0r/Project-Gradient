@@ -12,6 +12,7 @@ if button == 0 {
 		wait = random_range(1000, 4000) / oCamera.sectionx;
 		button = int64(random_range(1,5));
 		amount = int64(random_range(2,7));
+		pressornot = int64(random_range(0,2));
 		image_index = button;
 	}
 	wait--;
