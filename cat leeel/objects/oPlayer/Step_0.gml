@@ -82,8 +82,8 @@ if place_meeting(x, y, oSpike) {
 }
 
 if place_meeting(x, y, oCh1) {
-	global.startx = oCh1.x
-	global.starty = oCh1.y
+	startx = oCh1.x
+	starty = oCh1.y
 }
 if place_meeting(x, y, oCh2) {
 	startx = oCh2.x
@@ -125,4 +125,3 @@ if place_meeting(x, y, oCh) {
 	startx = oCh.x
 	starty = oCh.y
 }
-

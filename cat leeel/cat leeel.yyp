@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "159e6ec0-4cd0-49d4-9ce8-c58a8a21624b",
-            "Value": {
-                "id": "d3d51709-7aa8-495a-bb15-ee4827a6cacb",
-                "resourcePath": "objects\\oCat\\oCat.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1723af71-8328-4b4b-b33e-7914d24e59bb",
             "Value": {
                 "id": "b7fd54e9-de5d-4f24-b1e0-2e408d8dc8c1",
@@ -191,14 +183,6 @@
             }
         },
         {
-            "Key": "4d62fa03-d57a-47c8-b164-446e70b7a601",
-            "Value": {
-                "id": "d8a38090-7179-4118-aeb0-38d3b2b94b33",
-                "resourcePath": "objects\\object24\\object24.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4d6bb189-be76-4bb3-979e-4318b09ec081",
             "Value": {
                 "id": "3aacf58d-cc2c-4897-80ef-123693660a83",
@@ -287,14 +271,6 @@
             }
         },
         {
-            "Key": "67cf3a6c-ce11-4760-94bc-9989af284bab",
-            "Value": {
-                "id": "36a23e4f-65c0-4e76-9e27-04cfc4ab7792",
-                "resourcePath": "objects\\object12\\object12.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "6c111f92-2ed0-4a6d-b5ad-c6691b0401ab",
             "Value": {
                 "id": "bb98a4ad-53f2-4aad-aafa-2d62e8e90c8f",
@@ -372,14 +348,6 @@
                 "id": "f60589e0-4b44-4003-bec9-1eea9989e935",
                 "resourcePath": "views\\a105c61e-dd89-47d2-ad9d-0ed50a71c455.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "a4816a7e-70b0-42f3-b61b-5c99749a47cc",
-            "Value": {
-                "id": "fc3fdabb-c672-4291-80ae-9a6b9a4d9655",
-                "resourcePath": "objects\\oHandMaus\\oHandMaus.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -564,6 +532,14 @@
                 "id": "aa5815a0-5363-4c73-8c40-ccb7fdb78981",
                 "resourcePath": "objects\\oCh8\\oCh8.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e1a5118e-995a-4913-a46c-1f650b581001",
+            "Value": {
+                "id": "707ce98e-4729-4fe7-aa4f-c1b919ea1afd",
+                "resourcePath": "views\\e1a5118e-995a-4913-a46c-1f650b581001.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
