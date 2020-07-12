@@ -40,11 +40,11 @@ if ((abs(oPlayer.x-x)>50) && !(abs(oPlayer.x-x)>200)){
 image_xscale = sign(oPlayer.x - x);
 
 if shoot {
-	if wait < 40{
+	if wait < 80{
 		wait++
 	}else{
 		with (instance_create_layer(oEnemy2.x,oEnemy2.y,"Instances",oBullet)){
-		spd = oEnemy2.dir * 4;
+		spd = oEnemy2.dir * 3.4;
 		image_xscale = oEnemy2.image_xscale
 		x += spd;
 		}
