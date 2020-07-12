@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "b6101bf0-524d-47d7-98c8-23bcde464e47",
+            "Value": {
+                "id": "ef402ba7-b1a4-4ee7-ad94-257555a6f1e8",
+                "resourcePath": "sprites\\sJumpPad\\sJumpPad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b9577711-b7d7-4cfc-9c73-ca1c5db19e65",
             "Value": {
                 "id": "b5cb90ca-51d4-48ad-a5c3-25349ecdf5be",
@@ -604,6 +612,14 @@
                 "id": "39ee24e6-2462-42aa-a87a-3b556dc4e64a",
                 "resourcePath": "sprites\\sWall\\sWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d3d6bf6d-b297-490b-bbbd-4a22ee5180aa",
+            "Value": {
+                "id": "0e497942-102a-4a17-9d6c-30e35b93d3b8",
+                "resourcePath": "objects\\oJumpPad\\oJumpPad.yy",
+                "resourceType": "GMObject"
             }
         },
         {
