@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "549104a7-23e3-4445-bad4-9becf35d9517",
+            "Value": {
+                "id": "a0f57117-561e-45c0-8bf5-22251780d1fc",
+                "resourcePath": "sprites\\sAbstandsmeter\\sAbstandsmeter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a1ff3ce-bb07-4c0d-af61-c7e51316fe28",
             "Value": {
                 "id": "31e6e4af-bf37-40bf-9706-844684113345",
