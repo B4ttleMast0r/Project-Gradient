@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "4d62fa03-d57a-47c8-b164-446e70b7a601",
+            "Value": {
+                "id": "d8a38090-7179-4118-aeb0-38d3b2b94b33",
+                "resourcePath": "objects\\object24\\object24.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4d6bb189-be76-4bb3-979e-4318b09ec081",
             "Value": {
                 "id": "3aacf58d-cc2c-4897-80ef-123693660a83",
@@ -348,6 +356,14 @@
                 "id": "f60589e0-4b44-4003-bec9-1eea9989e935",
                 "resourcePath": "views\\a105c61e-dd89-47d2-ad9d-0ed50a71c455.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a4816a7e-70b0-42f3-b61b-5c99749a47cc",
+            "Value": {
+                "id": "fc3fdabb-c672-4291-80ae-9a6b9a4d9655",
+                "resourcePath": "objects\\oHandMaus\\oHandMaus.yy",
+                "resourceType": "GMObject"
             }
         },
         {
