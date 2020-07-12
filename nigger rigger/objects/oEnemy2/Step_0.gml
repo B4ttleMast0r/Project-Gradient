@@ -3,7 +3,7 @@
 
 dir = sign(oPlayer.x-x)
 shoot = false;
-hsp = 3k * dir
+hsp = 3 * dir
 vsp += grv;
 onground = (place_meeting(x , y + 1, oWall));
 

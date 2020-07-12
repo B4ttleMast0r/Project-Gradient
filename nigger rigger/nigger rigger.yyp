@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "159e6ec0-4cd0-49d4-9ce8-c58a8a21624b",
+            "Value": {
+                "id": "d3d51709-7aa8-495a-bb15-ee4827a6cacb",
+                "resourcePath": "objects\\oCat\\oCat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1723af71-8328-4b4b-b33e-7914d24e59bb",
             "Value": {
                 "id": "b7fd54e9-de5d-4f24-b1e0-2e408d8dc8c1",
