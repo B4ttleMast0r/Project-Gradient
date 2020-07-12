@@ -51,8 +51,6 @@ if shoot {
 		wait = 0;
 	}
 
-
-
 }
 if place_meeting(x, y, obulletgud) {
 		instance_destroy()
