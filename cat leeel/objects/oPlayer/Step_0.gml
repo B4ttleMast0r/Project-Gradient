@@ -14,6 +14,10 @@ if oCat.button != 3 {
 bbutton = keyboard_check_pressed(ord("J"));
 }else{ bbutton = false
 }
+if YEEEEES == true{
+	audio_play_sound(sn_mukke, 60, 1000);
+YEEEEES = false;
+}
 var move = rightbutton - leftbutton;
 
 hsp = move * movespeed;
