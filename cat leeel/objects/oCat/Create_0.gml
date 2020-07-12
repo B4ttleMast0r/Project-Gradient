@@ -5,3 +5,4 @@ wait = 0;
 counter = 0;
 image_index = 1;
 amount = 0;
+rand = 0;
