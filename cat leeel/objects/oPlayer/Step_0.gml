@@ -1,23 +1,19 @@
-leftbutton = keyboard_check(ord("A"));
+if oCat.button != 1 {
+	leftbutton = keyboard_check(ord("A"));
+}else{ leftbutton = false
+}
+if oCat.button != 2 {
 rightbutton = keyboard_check(ord("D"));
+}else{ rightbutton = false
+}
+if oCat.button != 4 {
 abutton = keyboard_check_pressed(ord("K"));
+}else{ abutton = false
+}
+if oCat.button != 3 {
 bbutton = keyboard_check_pressed(ord("J"));
-
-if oCat.button == 1{
-	leftbutton= false;
+}else{ bbutton = false
 }
-if oCat.button == 2{
-	rightbutton= false;
-}
-if oCat.button == 3{
-	bbutton= false;
-}
-if oCat.button == 4{
-	abutton= false;
-}
-
-
-
 if YEEEEES == true{
 	audio_play_sound(sn_mukke, 60, 1000);
 
@@ -30,18 +26,13 @@ vsp += grv;
 
 onground = (place_meeting(x , y + 1, oWall));
 
-//jump
+
 if abutton && onground{
 	audio_sound_pitch(sn_jump, random_range(0.8, 1.2));
 			audio_play_sound(sn_jump, 60, 0);
 	vsp = jumpforce;
 }
-//jump pad
-if place_meeting(x,y,oJumpPad){
-	vsp = -15;
-}
 
-//collision
 if(place_meeting(x + hsp, y, oWall)) 
 {
 	while(!place_meeting(x + sign(hsp), y, oWall)) 
