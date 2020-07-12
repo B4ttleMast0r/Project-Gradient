@@ -52,9 +52,9 @@ if !onground {
 if death {
 	audio_sound_pitch(sn_hit, random_range(0.8, 1.2));
 			audio_play_sound(sn_hit, 60, 0);
-	room_restart();
-	x = startx
+	x = oCamera.gotox + oCamera.nullpunktx;
 	y = starty
+	death = false;
 }
 if bbutton {
 	audio_sound_pitch(sn_shot, random_range(0.8, 1.2));

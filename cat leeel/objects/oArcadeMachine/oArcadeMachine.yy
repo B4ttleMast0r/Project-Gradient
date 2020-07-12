@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oArcadeMachine",
     "eventList": [
-        
+        {
+            "id": "910142f8-5fce-4f44-a902-dbb604ce524c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "03a3c83f-167f-46e6-9c16-588b73dd593b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

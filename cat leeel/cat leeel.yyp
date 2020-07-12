@@ -354,7 +354,7 @@
             "Key": "a5371090-9268-4314-a3ed-9beef8f01617",
             "Value": {
                 "id": "f00d263b-eae0-4c16-8564-56be57162b05",
-                "resourcePath": "objects\\camera\\camera.yy",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
