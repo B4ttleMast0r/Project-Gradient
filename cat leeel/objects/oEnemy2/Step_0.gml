@@ -54,8 +54,13 @@ if shoot {
 
 
 }
-if place_meeting(x, y, obulletgud) {
-		instance_destroy()
+if (place_meeting(x, y, obulletgud)) {
+	with(obulletgud){
+		instance_destroy();
+	}
+	instance_destroy()
 }
+
+
 x += hsp;
 y += vsp;
