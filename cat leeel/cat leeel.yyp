@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "5897e787-66fa-4ac0-9c6e-d1900eae40a2",
+            "Value": {
+                "id": "7607ba8c-3790-4607-9682-6b37fd6120a5",
+                "resourcePath": "sprites\\sCredits_2\\sCredits_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59a9fbd4-0fa1-40f2-9e1e-4ab0d377f68e",
             "Value": {
                 "id": "254fdf00-0221-4d95-a242-159667e8a984",
@@ -356,6 +364,14 @@
                 "id": "bb98a4ad-53f2-4aad-aafa-2d62e8e90c8f",
                 "resourcePath": "views\\6c111f92-2ed0-4a6d-b5ad-c6691b0401ab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "70844d17-009b-44da-a0bc-21aef7f6ffcd",
+            "Value": {
+                "id": "d38dc740-0425-4023-a690-34e8224bfee1",
+                "resourcePath": "sprites\\sCredits_1\\sCredits_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -532,6 +548,14 @@
                 "id": "8ad41248-1be9-40f2-af86-4eaf61ec5614",
                 "resourcePath": "views\\b282c72c-8e04-4bb8-aac1-13d6febb116e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b56110cc-e71a-4c1f-b198-62a84c4e05b2",
+            "Value": {
+                "id": "1717ae48-6fc1-4893-afbd-275d83d7246e",
+                "resourcePath": "objects\\oCredits_1\\oCredits_1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -755,6 +779,14 @@
             "Value": {
                 "id": "765e5c94-daa0-49ed-ad85-41f343128462",
                 "resourcePath": "objects\\oWall\\oWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f0c7d0cf-8ec1-415e-aab3-95e4c7e4e60c",
+            "Value": {
+                "id": "b4c9f376-94f4-4669-b5b5-ebce952e42fa",
+                "resourcePath": "objects\\oCredits_2\\oCredits_2.yy",
                 "resourceType": "GMObject"
             }
         },
