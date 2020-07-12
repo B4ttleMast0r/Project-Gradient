@@ -159,14 +159,6 @@
             }
         },
         {
-            "Key": "33cc7be8-084e-45b2-9d50-e60ad5140daa",
-            "Value": {
-                "id": "e1758b81-5573-475e-885b-c58773adfb9a",
-                "resourcePath": "sounds\\sn_city\\sn_city.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "34511e37-1642-40d9-b46e-9c20cc2156d4",
             "Value": {
                 "id": "bb559325-ff5f-4da1-b2c1-123128055c0b",

@@ -16,7 +16,6 @@ bbutton = keyboard_check_pressed(ord("J"));
 }
 if YEEEEES == true{
 	audio_play_sound(sn_mukke, 60, 1000);
-
 YEEEEES = false;
 }
 var move = rightbutton - leftbutton;
