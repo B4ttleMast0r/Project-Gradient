@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "c6887287-f66c-40ba-b79c-b49ded155023",
+            "Value": {
+                "id": "c6d1da93-7a86-401c-a984-e331a8d43413",
+                "resourcePath": "objects\\oJumpPad\\oJumpPad.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c69345c9-7ebe-4522-9c47-87e93931b931",
             "Value": {
                 "id": "098caa85-79e8-413e-96ef-829dfc42068f",
@@ -668,6 +676,14 @@
                 "id": "ef41a6a0-2e29-4a63-bfb1-7b1663f29712",
                 "resourcePath": "objects\\oLaufbandLinks\\oLaufbandLinks.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e3ea84a2-3100-48b9-a9e8-f86126871c10",
+            "Value": {
+                "id": "479ba82a-f69b-4b7a-b63f-294fd61eddbf",
+                "resourcePath": "sprites\\sJumpPad\\sJumpPad.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -25,13 +25,18 @@ vsp += grv;
 
 onground = (place_meeting(x , y + 1, oWall));
 
-
+//jump
 if abutton && onground{
 	audio_sound_pitch(sn_jump, random_range(0.8, 1.2));
 			audio_play_sound(sn_jump, 60, 0);
 	vsp = jumpforce;
 }
+//jump pad
+if place_meeting(x,y,oJumpPad){
+	vsp = -15;
+}
 
+//collision
 if(place_meeting(x + hsp, y, oWall)) 
 {
 	while(!place_meeting(x + sign(hsp), y, oWall)) 
