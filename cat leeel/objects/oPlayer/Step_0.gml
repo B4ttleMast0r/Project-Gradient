@@ -52,8 +52,12 @@ if !onground {
 if death {
 	audio_sound_pitch(sn_hit, random_range(0.8, 1.2));
 			audio_play_sound(sn_hit, 60, 0);
-	x = oCamera.gotox + oCamera.nullpunktx;
-	y = starty
+	x = oCamera.gotox + 10;
+	y = 606;
+	sprite_index = sPlayerIdle;
+	while place_meeting(x, y + 10, oWall) {
+		y-=10;
+	}
 	death = false;
 }
 if bbutton {
