@@ -9,7 +9,7 @@ x = oCamera.x - oCamera.nullpunktx;
 if button == 0 {
 	image_index = 0;
 	if (oCamera.sectionx > 3) && wait < 1 {
-		wait = random_range(100, 400) / oCamera.sectionx;
+		wait = random_range(1000, 4000) / oCamera.sectionx;
 		button = int64(random_range(1,5))
 		image_index = button;
 	}
