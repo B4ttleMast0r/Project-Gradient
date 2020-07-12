@@ -1,7 +1,19 @@
-leftbutton = keyboard_check(ord("A"));
+if oCat.button != 1 {
+	leftbutton = keyboard_check(ord("A"));
+}else{ leftbutton = false
+}
+if oCat.button != 2 {
 rightbutton = keyboard_check(ord("D"));
+}else{ rightbutton = false
+}
+if oCat.button != 4 {
 abutton = keyboard_check_pressed(ord("K"));
+}else{ abutton = false
+}
+if oCat.button != 3 {
 bbutton = keyboard_check_pressed(ord("J"));
+}else{ bbutton = false
+}
 var move = rightbutton - leftbutton;
 
 hsp = move * movespeed;
@@ -65,7 +77,7 @@ if bbutton {
 	audio_sound_pitch(sn_shot, random_range(0.8, 1.2));
 			audio_play_sound(sn_shot, 60, 0);
 		with (instance_create_layer(oPlayer.x,oPlayer.y,"Instances",obulletgud)){
-		spd = oPlayer.image_xscale* 4;
+		spd = oPlayer.image_xscale* 8;
 		image_xscale = oPlayer.image_xscale
 		x += spd;
 	}

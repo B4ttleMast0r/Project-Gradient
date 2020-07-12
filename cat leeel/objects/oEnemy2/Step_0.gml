@@ -40,7 +40,7 @@ if ((abs(oPlayer.x-x)>50) && !(abs(oPlayer.x-x)>200)){
 image_xscale = sign(oPlayer.x - x);
 
 if shoot {
-	if wait < 20{
+	if wait < 40{
 		wait++
 	}else{
 		with (instance_create_layer(oEnemy2.x,oEnemy2.y,"Instances",oBullet)){
@@ -53,6 +53,9 @@ if shoot {
 
 
 
+}
+if place_meeting(x, y, obulletgud) {
+		instance_destroy()
 }
 x += hsp;
 y += vsp;
