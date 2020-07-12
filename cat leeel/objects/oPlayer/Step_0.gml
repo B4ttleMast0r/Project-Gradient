@@ -9,7 +9,7 @@ if oCat.button == 1 && oCat.pressornot == 0{
 if oCat.button == 2 && oCat.pressornot == 0{
 	rightbutton= false;
 }
-if oCat.button == 3 && oCat.pressornot == 0{
+if oCat.button == 3 {
 	bbutton= false;
 }
 if oCat.button == 4 && oCat.pressornot == 0{
@@ -21,9 +21,7 @@ if oCat.button == 1 && oCat.pressornot == 1{
 if oCat.button == 2 && oCat.pressornot == 1{
 	rightbutton= true;
 }
-if oCat.button == 3 && oCat.pressornot == 1{
-	bbutton= true;
-}
+
 if oCat.button == 4 && oCat.pressornot == 1{
 	abutton= true;
 }
