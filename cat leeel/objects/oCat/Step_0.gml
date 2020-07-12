@@ -10,7 +10,8 @@ if button == 0 {
 	image_index = 0;
 	if (oCamera.sectionx > 3) && wait < 1 {
 		wait = random_range(1000, 4000) / oCamera.sectionx;
-		button = int64(random_range(1,5))
+		button = int64(random_range(1,5));
+		amount = int64(random_range(2,7));
 		image_index = button;
 	}
 	wait--;
@@ -18,7 +19,7 @@ if button == 0 {
 
 
 if button == 1 {
-	if counter > 20 {
+	if counter > amount {
 		counter = 0;
 		button = 0;
 	}else{ if leftbutton{
@@ -29,7 +30,7 @@ if button == 1 {
 	}
 }
 if button == 2 {
-	if counter > 20 {
+	if counter > amount {
 		counter = 0;
 		button = 0;
 	}else{ if rightbutton{
@@ -41,7 +42,7 @@ if button == 2 {
 }
 
 if button == 3 {
-	if counter > 20 {
+	if counter > amount {
 		counter = 0;
 		button = 0;
 	}else{ if bbutton{
@@ -53,7 +54,7 @@ if button == 3 {
 }
 
 if button == 4 {
-	if counter > 20 {
+	if counter > amount {
 		counter = 0;
 		button = 0;
 	}else{ if abutton{
