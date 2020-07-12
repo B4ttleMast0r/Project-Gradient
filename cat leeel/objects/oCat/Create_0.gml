@@ -3,3 +3,4 @@
 button = 0;
 wait = 0;
 counter = 0;
+image_index = 1;

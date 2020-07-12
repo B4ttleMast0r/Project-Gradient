@@ -4,6 +4,8 @@ leftbutton = keyboard_check(ord("A"));
 rightbutton = keyboard_check(ord("D"));
 abutton = keyboard_check_pressed(ord("K"));
 bbutton = keyboard_check_pressed(ord("J"));
+image_speed = 0;
+x = oCamera.x - oCamera.nullpunktx;
 if button == 0 {
 	image_index = 0;
 	if (oCamera.sectionx > 3) && wait < 1 {
