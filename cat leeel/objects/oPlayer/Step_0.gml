@@ -55,8 +55,9 @@ if death {
 	x = oCamera.gotox + 10;
 	y = 606;
 	sprite_index = sPlayerIdle;
+	vsp = 0;
 	while place_meeting(x, y + 10, oWall) {
-		y-=10;
+		y--;
 	}
 	death = false;
 }
