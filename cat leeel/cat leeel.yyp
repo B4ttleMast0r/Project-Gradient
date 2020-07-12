@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "889fbc80-fd49-4f73-9b30-88d28d3f5708",
+            "Value": {
+                "id": "67412b2e-1f1b-404b-9973-9331ea95c033",
+                "resourcePath": "sounds\\sn_mukke\\sn_mukke.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8d26960d-d235-4a55-905e-a68e2747f7c3",
             "Value": {
                 "id": "2d7288f1-abed-4124-b9f6-926166d2e970",
