@@ -3,18 +3,32 @@ rightbutton = keyboard_check(ord("D"));
 abutton = keyboard_check_pressed(ord("K"));
 bbutton = keyboard_check_pressed(ord("J"));
 
-if oCat.button == 1{
+if oCat.button == 1 && oCat.pressornot == 0{
 	leftbutton= false;
 }
-if oCat.button == 2{
+if oCat.button == 2 && oCat.pressornot == 0{
 	rightbutton= false;
 }
-if oCat.button == 3{
+if oCat.button == 3 && oCat.pressornot == 0{
 	bbutton= false;
 }
-if oCat.button == 4{
+if oCat.button == 4 && oCat.pressornot == 0{
 	abutton= false;
 }
+if oCat.button == 1 && oCat.pressornot == 1{
+	leftbutton= true;
+}
+if oCat.button == 2 && oCat.pressornot == 1{
+	rightbutton= true;
+}
+if oCat.button == 3 && oCat.pressornot == 1{
+	bbutton= true;
+}
+if oCat.button == 4 && oCat.pressornot == 1{
+	abutton= true;
+}
+
+
 
 
 
