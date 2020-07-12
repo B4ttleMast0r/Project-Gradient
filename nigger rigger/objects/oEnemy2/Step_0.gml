@@ -3,7 +3,7 @@
 
 dir = sign(oPlayer.x-x)
 shoot = false;
-hsp = 2 * dir
+hsp = 3k * dir
 vsp += grv;
 onground = (place_meeting(x , y + 1, oWall));
 
@@ -54,5 +54,12 @@ if shoot {
 
 
 }
+if place_meeting(x,y+1,oLaufbandLinks){
+	x += -2;
+}
+if place_meeting(x,y+1,oLaufbandRechts){
+	x += 2;
+}
+
 x += hsp;
 y += vsp;
