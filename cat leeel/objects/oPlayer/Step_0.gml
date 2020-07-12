@@ -60,6 +60,17 @@ if(place_meeting(x , y + vsp, oWall))
 	vsp = 0;
 }
 
+if(place_meeting(x + hsp , y + vsp, oWall)) 
+{
+	while(!place_meeting(x + sign(hsp), y + sign(vsp), oWall)) 
+	{
+		x = x + sign(hsp);
+		y = y + sign(vsp);
+	}
+	vsp = 0;
+	hsp = 0;
+}
+
 //animation
 if hsp == 0 {
 	sprite_index = sPlayerIdle;
